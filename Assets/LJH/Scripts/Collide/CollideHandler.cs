@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using LJH.Scripts.Map;
+using UnityEngine;
 using LJH.Scripts.Player;
 using PurpleFlowerCore;
 
@@ -6,6 +7,7 @@ namespace LJH.Scripts.Collide
 {
     public static class CollideHandler
     {
+        
         public static void ColliderHandle(string tag1, string tag2, ColliderBase collider1, ColliderBase collider2,bool canExchange=true)
         {
             PFCLog.Info($"碰撞处理:{tag1},{tag2}");
@@ -15,7 +17,6 @@ namespace LJH.Scripts.Collide
                 var originDirection = thePlayer.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 thePlayer.Direction = Out_Direction;
-                PFCLog.Info("撞墙反弹");
                 return;
             }
             
@@ -26,7 +27,6 @@ namespace LJH.Scripts.Collide
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 
                 thePlayer.Direction = Out_Direction;
-                PFCLog.Info("撞墙反弹");
                 return;
             }
             
@@ -43,11 +43,48 @@ namespace LJH.Scripts.Collide
             {
                 PFCLog.Info("玩家:"+(collider1 as Thorn).ThePlayer.id+"胜利");
                 //todo: game over
+                return;
+            }
+
+            if (tag1 == "BarrierThorn" && tag2 == "Thorn")
+            {
+                var thePlayer = (collider2 as Thorn).ThePlayer;
+                var theBarrier = (collider1 as BarrierThorn).TheBarrier;
+                theBarrier.Direction = thePlayer.Direction;
+                thePlayer.Direction = -thePlayer.Direction;
+                theBarrier.CurrentSpeed = thePlayer.CurrentSpeed/1.5f;
+                thePlayer.CurrentSpeed /= 1.2f;
+                return;
             }
             
+            if (tag1 == "BarrierPedestal" && tag2 == "Thorn")
+            {
+                var thePlayer = (collider2 as Thorn).ThePlayer;
+                var theBarrier = (collider1 as BarrierPedestal).TheBarrier;
+                theBarrier.Direction = thePlayer.Direction;
+                thePlayer.Direction = -thePlayer.Direction;
+                theBarrier.CurrentSpeed = thePlayer.CurrentSpeed/1.5f;
+                thePlayer.CurrentSpeed /= 1.2f;
+                return;
+            }
             
+            if (tag1 == "Boundary" && tag2 == "BarrierThorn")
+            {
+                var theBarrier= (collider2 as BarrierThorn).TheBarrier;
+                var originDirection = theBarrier.Direction;
+                Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
+                theBarrier.Direction = Out_Direction;
+                return;
+            }
             
-            
+            if (tag1 == "Boundary" && tag2 == "BarrierPedestal")
+            {
+                var theBarrier= (collider2 as BarrierPedestal).TheBarrier;
+                var originDirection = theBarrier.Direction;
+                Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
+                theBarrier.Direction = Out_Direction;
+                return;
+            }
             
             if(canExchange)
                 ColliderHandle(tag2,tag1,collider2,collider1,false);
