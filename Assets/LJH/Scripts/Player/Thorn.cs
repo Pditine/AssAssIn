@@ -8,10 +8,20 @@ namespace LJH.Scripts.Player
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.CompareTag("Player"))
+            switch (other.gameObject.tag)
             {
-                //thePlayer.Direction = 
+                case "Player":
+                    if(other.collider.gameObject.CompareTag("Thorn"))
+                    {
+                        var otherPlayer = other.gameObject.GetComponent<PlayerController>();
+                        //if (!thePlayer) thePlayer = other.gameObject.GetComponentInParent<PlayerController>();
+                        otherPlayer.Direction = -otherPlayer.Direction;
+                        otherPlayer.CurrentSpeed = thePlayer.CurrentSpeed;
+                        
+                    }
+                    break;
             }
+            
         }
     }
 }
