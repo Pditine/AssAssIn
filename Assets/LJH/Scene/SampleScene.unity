@@ -557,7 +557,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2703276, y: 13.048001}
   m_EdgeRadius: 0
---- !u!1001 &1108285041
+--- !u!1001 &811799385
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -569,13 +569,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2467289949901680377, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4970618238774393161, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.13
+      value: -7.04
       objectReference: {fileID: 0}
     - target: {fileID: 4970618238774393161, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: m_LocalPosition.y
@@ -800,7 +796,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.728502, y: 1.64989}
   m_EdgeRadius: 0
---- !u!1001 &1483139748
+--- !u!1001 &1339689458
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -812,21 +808,13 @@ PrefabInstance:
       propertyPath: id
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 862621098630379189, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
-      propertyPath: rotateSpeed
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 2467289949901680377, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2467289949901680377, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4970618238774393161, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.49
+      value: 7.44
       objectReference: {fileID: 0}
     - target: {fileID: 4970618238774393161, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: m_LocalPosition.y
@@ -910,7 +898,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 283346458}
-  - {fileID: 1108285041}
-  - {fileID: 1483139748}
   - {fileID: 1700525376}
   - {fileID: 309687649}
+  - {fileID: 811799385}
+  - {fileID: 1339689458}

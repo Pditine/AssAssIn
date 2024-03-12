@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7498104358663490432}
   - component: {fileID: 7821818522590453933}
   - component: {fileID: 7739867710740820187}
+  - component: {fileID: 5662480646630776910}
   m_Layer: 0
   m_Name: Ass
-  m_TagString: Untagged
+  m_TagString: Ass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.010483116, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,8 +129,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.29903376, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &5662480646630776910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122943667079028343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c13b949a9d41d3b7b92ec84b551a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 862621098630379189}
 --- !u!1 &2467289949901680377
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,10 +154,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4970618238774393161}
   - component: {fileID: 862621098630379189}
-  - component: {fileID: 1582520901856264833}
+  - component: {fileID: 418678208035984480}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,11 +192,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  CurrentSpeed: 0
   maxSpeed: 15
   friction: 0.1
   rotateSpeed: 0.4
   Direction: {x: 0, y: 0}
---- !u!50 &1582520901856264833
+--- !u!50 &418678208035984480
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -195,8 +210,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.1
-  m_AngularDrag: 4
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -220,9 +235,10 @@ GameObject:
   - component: {fileID: 4812109001652229076}
   - component: {fileID: 7405079547775421918}
   - component: {fileID: 734103126839772505}
+  - component: {fileID: 523522673195089967}
   m_Layer: 0
   m_Name: Thorn
-  m_TagString: Untagged
+  m_TagString: Thorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,7 +342,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00898549, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -337,5 +353,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.302029, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &523522673195089967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350927923615421093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e01f7eb8a5c4d99b5afeab560613cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 862621098630379189}

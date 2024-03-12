@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace LJH.Scripts.Player
 {
@@ -7,17 +9,21 @@ namespace LJH.Scripts.Player
     {
         public int id;
         private bool _isCharging;
-        private float _currentSpeed;
-        public float CurrentSpeed => _currentSpeed;
+        [HideInInspector]public float CurrentSpeed;
         [SerializeField] private float maxSpeed;
         [SerializeField] private float friction;
         [SerializeField] private float rotateSpeed;
         private Vector2 _inputDirection;
-        public Vector2 Direction;
-        
+        [HideInInspector]public Vector2 Direction;
+
+        private void Start()
+        {
+            Direction = transform.right;
+        }
+
         private void FixedUpdate()
         {
-            transform.position += (Vector3)Direction*(_currentSpeed*Time.deltaTime);
+            transform.position += (Vector3)Direction*(CurrentSpeed*Time.deltaTime);
             transform.right = Vector3.Lerp(transform.right, Direction, rotateSpeed);
             ReduceSpeed();
         }
@@ -40,15 +46,15 @@ namespace LJH.Scripts.Player
             {
                 _isCharging = false;
                 Direction = _inputDirection;
-                _currentSpeed = maxSpeed;
+                CurrentSpeed = maxSpeed;
                 Debug.Log("结束蓄力");
             }
         }
 
         private void ReduceSpeed()
         {
-            if (_currentSpeed <= 0) _currentSpeed = 0;
-            _currentSpeed -= friction;
+            if (CurrentSpeed <= 0) CurrentSpeed = 0;
+            CurrentSpeed -= friction;
         }
     }
 }
