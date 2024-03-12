@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace LJH.Scripts
+namespace LJH.Scripts.Player
 {
     public class PlayerAction : MonoBehaviour
     {
