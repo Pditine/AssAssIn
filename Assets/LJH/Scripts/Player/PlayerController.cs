@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 namespace LJH.Scripts.Player
 {
@@ -25,6 +24,10 @@ namespace LJH.Scripts.Player
         {
             transform.position += (Vector3)Direction*(CurrentSpeed*Time.deltaTime);
             transform.right = Vector3.Lerp(transform.right, Direction, rotateSpeed);
+        }
+
+        private void Update()
+        {
             ReduceSpeed();
         }
 
@@ -53,8 +56,8 @@ namespace LJH.Scripts.Player
 
         private void ReduceSpeed()
         {
+            CurrentSpeed -= friction*Time.deltaTime;
             if (CurrentSpeed <= 0) CurrentSpeed = 0;
-            CurrentSpeed -= friction;
         }
     }
 }
