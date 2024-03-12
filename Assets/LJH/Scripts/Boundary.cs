@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using LJH.Scripts.Player;
+using UnityEngine;
 
 namespace LJH.Scripts
 {

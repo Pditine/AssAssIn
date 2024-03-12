@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace LJH.Scripts
+namespace LJH.Scripts.Player
 {
     public class PlayerController : MonoBehaviour
     {
         public int id;
         private bool _isCharging;
         private float _currentSpeed;
+        public float CurrentSpeed => _currentSpeed;
         [SerializeField] private float maxSpeed;
         [SerializeField] private float friction;
         [SerializeField] private float rotateSpeed;
