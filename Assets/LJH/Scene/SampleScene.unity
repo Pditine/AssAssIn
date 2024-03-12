@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 324813363}
   m_Layer: 0
   m_Name: Boundary (3)
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f97fa204b4bc89cda6219f840fb30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collideCD: 0.1
   normalDirection: {x: -1, y: 0}
 --- !u!61 &324813364
 BoxCollider2D:
@@ -479,7 +480,7 @@ GameObject:
   - component: {fileID: 689223715}
   m_Layer: 0
   m_Name: Boundary (4)
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -511,6 +512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f97fa204b4bc89cda6219f840fb30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collideCD: 0.1
   normalDirection: {x: 1, y: 0}
 --- !u!61 &689223716
 BoxCollider2D:
@@ -627,7 +629,7 @@ GameObject:
   - component: {fileID: 1288674496}
   m_Layer: 0
   m_Name: Boundary (5)
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -659,6 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f97fa204b4bc89cda6219f840fb30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collideCD: 0.1
   normalDirection: {x: 0, y: -1}
 --- !u!61 &1288674497
 BoxCollider2D:
@@ -718,7 +721,7 @@ GameObject:
   - component: {fileID: 1296299630}
   m_Layer: 0
   m_Name: Boundary (6)
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,6 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6f97fa204b4bc89cda6219f840fb30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collideCD: 0.1
   normalDirection: {x: 0, y: 1}
 --- !u!61 &1296299631
 BoxCollider2D:
