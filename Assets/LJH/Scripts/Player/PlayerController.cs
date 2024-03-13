@@ -23,8 +23,12 @@ namespace LJH.Scripts.Player
         [SerializeField] private float cd;
         private float _currentCD;
 
-        public PlayerInput TheInput;
+        [HideInInspector]public PlayerInput TheInput;
 
+        [SerializeField] private Thorn theThorn;
+        public Thorn TheThorn => theThorn;
+        [SerializeField] private Ass theAss;
+        public Ass TheAss => theAss;
 
         private void Start()
         {
@@ -86,13 +90,14 @@ namespace LJH.Scripts.Player
             if (CurrentSpeed <= 0) CurrentSpeed = 0;
         }
 
-        public void UpdateCD()
+        private void UpdateCD()
         {
             if(!_isCharging)
                 _currentCD -= Time.deltaTime;
             if (_currentCD <= 0) _currentCD = 0;
-            _cdUI.UpdateCD((float)_currentCD/cd);
+            _cdUI.UpdateCD(_currentCD/cd);
         }
+        
         
     }
 }

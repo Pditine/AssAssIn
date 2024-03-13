@@ -10,6 +10,9 @@ namespace LJH.Scripts.Player
     {
         [SerializeField] private PlayerController thePlayer;
         public PlayerController ThePlayer => thePlayer;
+        
+        [HideInInspector]public float CurrentScale;
+        [SerializeField] private float thornMaxScale;
 
         private void Start()
         {
