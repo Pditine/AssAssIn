@@ -1,5 +1,6 @@
 using System.Linq;
 using PurpleFlowerCore;
+using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,10 +11,12 @@ namespace LJH.Scripts.Player
         private PlayerInput _playerInput;
         private PlayerController _thePlayer;
         
+        
         private void Start()
         {
             _playerInput = GetComponent<PlayerInput>();
             _thePlayer = FindObjectsOfType<PlayerController>().FirstOrDefault(p=>p.ID == _playerInput.playerIndex);
+            _thePlayer.TheInput = _playerInput;
         }
 
         public void ChangeDirection(InputAction.CallbackContext ctx)
