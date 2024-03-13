@@ -1,5 +1,6 @@
 ﻿using PurpleFlowerCore;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace LJH.Scripts.Collide
 {
@@ -8,6 +9,8 @@ namespace LJH.Scripts.Collide
         private float _collideCD = 0.01f;
         
         private float _currentCollideCD;
+
+        protected UnityAction CollisionEvent;
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (_currentCollideCD > 0) return;
@@ -17,8 +20,10 @@ namespace LJH.Scripts.Collide
             otherCollider._currentCollideCD = otherCollider._collideCD;
             _currentCollideCD = _collideCD;
             CollideHandler.ColliderHandle(gameObject.tag,otherCollider.gameObject.tag,this,otherCollider);
+            CollisionEvent?.Invoke();
         }
-
+        
+        
         protected void Update()
         {
             _currentCollideCD -= Time.deltaTime;

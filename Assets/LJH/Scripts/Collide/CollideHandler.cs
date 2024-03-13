@@ -1,8 +1,9 @@
 ﻿using LJH.Scripts.Map;
 using UnityEngine;
 using LJH.Scripts.Player;
+using Lofelt.NiceVibrations;
 using PurpleFlowerCore;
-
+    
 namespace LJH.Scripts.Collide
 {
     public static class CollideHandler
@@ -10,6 +11,8 @@ namespace LJH.Scripts.Collide
         
         public static void ColliderHandle(string tag1, string tag2, ColliderBase collider1, ColliderBase collider2,bool canExchange=true)
         {
+            //HapticPatterns.PlayEmphasis();
+            
             PFCLog.Info($"碰撞处理:{tag1},{tag2}");
             if (tag1 == "Boundary" && tag2 == "Thorn")
             {

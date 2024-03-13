@@ -23,6 +23,8 @@ namespace LJH.Scripts.Player
         [SerializeField] private float cd;
         private float _currentCD;
 
+        public PlayerInput TheInput;
+
 
         private void Start()
         {
