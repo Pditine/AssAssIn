@@ -50,7 +50,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""fbaf55a7-c551-4b4b-a62f-53fb1155053c"",
-                    ""path"": ""<XInputController>/leftStick"",
+                    ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -73,6 +73,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""738653f5-de79-47e1-b6fa-3b05ae248528"",
                     ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Launch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d2fe6a38-d5dc-4ee4-9e31-81db7daebd74"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
