@@ -41,7 +41,7 @@ namespace LJH.Scripts.Collide
 
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
-                PFCLog.Info("玩家:"+(collider1 as Thorn).ThePlayer.id+"胜利");
+                PFCLog.Info("玩家:"+(collider1 as Thorn).ThePlayer.ID+"胜利");
                 //todo: game over
                 return;
             }
