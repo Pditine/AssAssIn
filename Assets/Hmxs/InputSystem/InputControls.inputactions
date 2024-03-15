@@ -6,83 +6,24 @@
             "id": "2671ae5a-f89b-4030-a1ae-a96d59ef9f37",
             "actions": [
                 {
-                    "name": "Act",
-                    "type": "Button",
-                    "id": "34f620aa-cb72-4ccc-a5e5-793198593cd5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "7a5af1a0-db7e-45a1-abba-d546f5769467",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Act",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fd531612-8f0c-4125-a498-c7327f9cc8a2",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Act",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Pre",
-            "id": "c1d2b1d9-a5bb-4198-b653-0557cb2e31d7",
-            "actions": [
-                {
-                    "name": "Select",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "d2da327e-8ab3-4f44-881b-5b2c3433b313",
-                    "expectedControlType": "",
+                    "id": "4ca3fe8a-6b6b-4afb-8003-aca6d7bc7ebb",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Confirm",
-                    "type": "Button",
-                    "id": "9af8592e-7a63-4c91-bc29-5564f3e459c6",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "9f0f1ed6-01cd-4687-bf24-5bfc97f4cf07",
+                    "id": "1808adf0-7c22-42a3-9d4f-b1479533d8f8",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Select",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d075da54-9651-4aed-921f-e18aabc03516",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Confirm",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
