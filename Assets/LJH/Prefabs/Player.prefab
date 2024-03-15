@@ -144,6 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 862621098630379189}
+  CurrentScale: 0
+  assMinScale: 0.5
 --- !u!1 &2467289949901680377
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +203,8 @@ MonoBehaviour:
   Direction: {x: 0, y: 0}
   cd: 0.5
   TheInput: {fileID: 0}
+  theThorn: {fileID: 523522673195089967}
+  theAss: {fileID: 5662480646630776910}
 --- !u!50 &418678208035984480
 Rigidbody2D:
   serializedVersion: 4
@@ -456,3 +460,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 862621098630379189}
+  CurrentScale: 0
+  thornMaxScale: 2

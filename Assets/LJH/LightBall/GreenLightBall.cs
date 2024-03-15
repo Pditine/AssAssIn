@@ -1,5 +1,4 @@
 ﻿using LJH.Scripts.Player;
-using UnityEngine;
 
 namespace LJH.LightBall
 {
@@ -7,7 +6,7 @@ namespace LJH.LightBall
     {
         protected override void AddBuff(PlayerController thePlayer)
         {
-            
+            thePlayer.ChangeSpeed(1);
         }
     }
 }

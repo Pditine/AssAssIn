@@ -17,6 +17,12 @@ namespace LJH.Scripts.Player
         private void Start()
         {
             CollisionEvent += HandleVibration;
+            CurrentScale = transform.localScale.x;
+        }
+
+        private void FixedUpdate()
+        {
+            DoChangeScale();
         }
 
         private void HandleVibration()
@@ -29,6 +35,20 @@ namespace LJH.Scripts.Player
                 theGamepad.ResetHaptics();
             });
         }
+
+        public void ChangeScale(float delta)
+        {
+            CurrentScale += thornMaxScale;
+            if (CurrentScale > thornMaxScale)
+                CurrentScale = thornMaxScale;
+        }
+
+        private void DoChangeScale()
+        {
+            if (transform.localScale.x.Equals(CurrentScale)) return;
+            transform.localScale = Vector3.Lerp(transform.localScale,new Vector3(CurrentScale,CurrentScale,CurrentScale),0.02f);
+        }
+        
     }
     
 

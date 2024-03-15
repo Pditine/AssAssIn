@@ -1,10 +1,14 @@
 ﻿using LJH.Scripts.Player;
+using PurpleFlowerCore;
+using PurpleFlowerCore.Utility;
 using UnityEngine;
 
 namespace LJH.LightBall
 {
     public abstract class LightBallBase : MonoBehaviour
     {
+        protected SpriteRenderer SpriteRenderer => GetComponent<SpriteRenderer>();
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
@@ -17,13 +21,15 @@ namespace LJH.LightBall
 
         public virtual void BeCreate()
         {
-            
+            FadeUtility.FadeInAndStay(SpriteRenderer,100);
         }
 
         protected virtual void BeDestroy()
         {
-            //todo:be destroy
-            gameObject.SetActive(false);
+            FadeUtility.FadeOut(SpriteRenderer,200, () =>
+            {
+                PoolSystem.PushGameObject(gameObject);
+            });
         }
     }
 }
