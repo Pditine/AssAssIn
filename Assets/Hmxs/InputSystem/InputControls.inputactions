@@ -39,6 +39,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Pre",
+            "id": "c1d2b1d9-a5bb-4198-b653-0557cb2e31d7",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Value",
+                    "id": "d2da327e-8ab3-4f44-881b-5b2c3433b313",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Confirm",
+                    "type": "Button",
+                    "id": "9af8592e-7a63-4c91-bc29-5564f3e459c6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9f0f1ed6-01cd-4687-bf24-5bfc97f4cf07",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d075da54-9651-4aed-921f-e18aabc03516",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
