@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Hmxs.Toolkit.Base.Singleton;
-using LJH.Scripts;
+using LJH.Scripts.Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
