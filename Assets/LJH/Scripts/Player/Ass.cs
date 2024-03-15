@@ -1,4 +1,5 @@
-﻿using LJH.Scripts.Collide;
+﻿using System;
+using LJH.Scripts.Collide;
 using UnityEngine;
 
 namespace LJH.Scripts.Player
@@ -11,5 +12,28 @@ namespace LJH.Scripts.Player
 
         [HideInInspector]public float CurrentScale;
         [SerializeField] private float assMinScale;
+
+        private void Start()
+        {
+            CurrentScale = transform.localScale.x;
+        }
+
+        private void FixedUpdate()
+        {
+            DoChangeScale();
+        }
+
+        public void ChangeScale(float delta)
+        {
+            CurrentScale += assMinScale;
+            if (CurrentScale < assMinScale)
+                CurrentScale = assMinScale;
+        }
+
+        private void DoChangeScale()
+        {
+            if (transform.localScale.x.Equals(CurrentScale)) return;
+            transform.localScale = Vector3.Lerp(transform.localScale,new Vector3(CurrentScale,CurrentScale,CurrentScale),0.02f);
+        }
     }
 }

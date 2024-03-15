@@ -97,7 +97,12 @@ namespace LJH.Scripts.Player
             if (_currentCD <= 0) _currentCD = 0;
             _cdUI.UpdateCD(_currentCD/cd);
         }
-        
+
+        public void ChangeSpeed(float delta)
+        {
+            maxSpeed += delta;
+            if (maxSpeed < 5) maxSpeed = 5;
+        }
         
     }
 }
