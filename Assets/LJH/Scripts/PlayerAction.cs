@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,13 +7,9 @@ namespace LJH.Scripts
 {
     public class PlayerAction : MonoBehaviour
     {
-        private PlayerInput _playerInput;
         private PlayerController _thePlayer;
-        private void Start()
-        {
-            _playerInput = GetComponent<PlayerInput>();
-            _thePlayer = FindObjectsOfType<PlayerController>().FirstOrDefault(p=>p.id == _playerInput.playerIndex);
-        }
+
+        public void BindPlayer(PlayerController targetPlayer) => _thePlayer = targetPlayer;
 
         public void ChangeDirection(InputAction.CallbackContext ctx)
         {
@@ -25,6 +22,10 @@ namespace LJH.Scripts
             if (!_thePlayer) return;
             _thePlayer.Launch(ctx);
         }
-        
+
+        public void OnDeviceLost(PlayerInput playerInput)
+        {
+            Destroy(gameObject);
+        }
     }
 }
