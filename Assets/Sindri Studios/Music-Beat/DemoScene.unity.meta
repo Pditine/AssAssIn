@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sindri Studios/Music-Beat/DemoScene.unity.meta
 guid: 2cc2c9ce8eb27f7459ca2c503ed432da
+========
+guid: f9d65a4a82e297a4a9844f64779f3126
+>>>>>>>> Pditine:Assets/PurpleFlowerCore/Plugins/LitJson/LitJSON.csproj.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

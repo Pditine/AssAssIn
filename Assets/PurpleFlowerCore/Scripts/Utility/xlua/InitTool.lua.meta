@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Hmxs/Anim.meta
+guid: afe26280ca1cc8246aeb324dd69dd2ac
+folderAsset: yes
+========
 guid: 32afb2e6db0b74143b707da8e91a6b18
+>>>>>>>> Pditine:Assets/PurpleFlowerCore/Scripts/Utility/xlua/InitTool.lua.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
