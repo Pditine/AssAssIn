@@ -1,8 +1,7 @@
 ﻿using LJH.Scripts.Collide;
-using LJH.Scripts.Player;
 using UnityEngine;
 
-namespace LJH.Scripts
+namespace LJH.Scripts.Map
 {
     public class Boundary : ColliderBase
     {

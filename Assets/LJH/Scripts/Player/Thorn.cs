@@ -25,9 +25,16 @@ namespace LJH.Scripts.Player
             DoChangeScale();
         }
 
+        private void OnDisable()
+        {
+            if (thePlayer.TheInput.devices[0] is Gamepad theGamepad) theGamepad.ResetHaptics();
+        }
+
         private void HandleVibration()
         {
-            var theGamepad = thePlayer.TheInput.devices[0] as Gamepad;
+            Gamepad theGamepad = null;
+            if(thePlayer.TheInput)
+                theGamepad = thePlayer.TheInput.devices[0] as Gamepad;
             if (theGamepad==null) return;
             theGamepad.SetMotorSpeeds(0.5f,0.5f);
             DelayUtility.Delay(0.3f,() =>
@@ -38,7 +45,7 @@ namespace LJH.Scripts.Player
 
         public void ChangeScale(float delta)
         {
-            CurrentScale += thornMaxScale;
+            CurrentScale += delta;
             if (CurrentScale > thornMaxScale)
                 CurrentScale = thornMaxScale;
         }
@@ -48,6 +55,8 @@ namespace LJH.Scripts.Player
             if (transform.localScale.x.Equals(CurrentScale)) return;
             transform.localScale = Vector3.Lerp(transform.localScale,new Vector3(CurrentScale,CurrentScale,CurrentScale),0.02f);
         }
+        
+        
         
     }
     
