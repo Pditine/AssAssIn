@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using System.Linq;
 using LJH.Scripts.UI;
 using PurpleFlowerCore;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace LJH.Scripts.Player
 {
@@ -25,10 +27,13 @@ namespace LJH.Scripts.Player
 
         [HideInInspector]public PlayerInput TheInput;
 
-        [SerializeField] private Thorn theThorn;
-        public Thorn TheThorn => theThorn;
-        [SerializeField] private Ass theAss;
-        public Ass TheAss => theAss;
+        [SerializeField] private List<Thorn> thorns = new();
+        [SerializeField] private List<Ass> asses = new();
+
+        private Thorn _theThorn;
+        public Thorn TheThorn => _theThorn;
+        private Ass _theAss;
+        public Ass TheAss => _theAss;
 
         private void Start()
         {
@@ -36,6 +41,8 @@ namespace LJH.Scripts.Player
             _cdUI = FindObjectsOfType<PlayerCD>().FirstOrDefault(p=>p.ID == id);
             if(!_cdUI)
                 PFCLog.Error("未找到UI");
+            ChangeThorn(0);
+            ChangeAss(1);
         }
 
         private void FixedUpdate()
@@ -102,6 +109,21 @@ namespace LJH.Scripts.Player
         {
             maxSpeed *= 1 + percentageDelta*0.01f;
         }
+
+        public void ChangeThorn(int thornIndex)
+        {
+            if(_theThorn)
+                _theThorn.gameObject.SetActive(false);
+            _theThorn = thorns[thornIndex];
+            _theThorn.gameObject.SetActive(true);
+        }
         
+        public void ChangeAss(int assIndex)
+        {
+            if(_theAss)
+                _theAss.gameObject.SetActive(false);
+            _theAss = asses[assIndex];
+            _theAss.gameObject.SetActive(true);
+        }
     }
 }
