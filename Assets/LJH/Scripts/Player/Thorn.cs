@@ -1,5 +1,6 @@
 ﻿using System;
 using LJH.Scripts.Collide;
+using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,7 +17,7 @@ namespace LJH.Scripts.Player
 
         private void Start()
         {
-            CollisionEvent += HandleVibration;
+            collisionEvent += HandleVibration;
             CurrentScale = transform.localScale.x;
         }
 
@@ -27,11 +28,12 @@ namespace LJH.Scripts.Player
 
         private void OnDisable()
         {
-            if (thePlayer.TheInput.devices[0] is Gamepad theGamepad) theGamepad.ResetHaptics();
+            if (thePlayer.TheInput&&thePlayer.TheInput.devices[0] is Gamepad theGamepad) theGamepad.ResetHaptics();
         }
 
         private void HandleVibration()
         {
+            PFCLog.Info(thePlayer.ID+":震动");
             Gamepad theGamepad = null;
             if(thePlayer.TheInput)
                 theGamepad = thePlayer.TheInput.devices[0] as Gamepad;

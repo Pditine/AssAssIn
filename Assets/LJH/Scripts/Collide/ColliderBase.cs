@@ -10,7 +10,8 @@ namespace LJH.Scripts.Collide
         
         private float _currentCollideCD;
 
-        protected UnityAction CollisionEvent;
+        protected UnityAction collisionEvent;
+        public UnityAction CollisionEvent => collisionEvent;
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (_currentCollideCD > 0) return;
@@ -20,7 +21,7 @@ namespace LJH.Scripts.Collide
             otherCollider._currentCollideCD = otherCollider._collideCD;
             _currentCollideCD = _collideCD;
             CollideHandler.ColliderHandle(gameObject.tag,otherCollider.gameObject.tag,this,otherCollider);
-            CollisionEvent?.Invoke();
+            //CollisionEvent?.Invoke();
         }
         
         

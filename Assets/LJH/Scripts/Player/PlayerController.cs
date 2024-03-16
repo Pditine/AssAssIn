@@ -54,7 +54,7 @@ namespace LJH.Scripts.Player
         {
             if (!_isCharging) return;
             var tempInputDirection = _inputDirection;
-            _inputDirection = -ctx.ReadValue<Vector2>().normalized;
+            _inputDirection = ctx.ReadValue<Vector2>().normalized;
             if (_inputDirection.normalized == Vector2.zero)
                 _inputDirection = tempInputDirection;
             directionArrow.transform.right = _inputDirection;
@@ -98,10 +98,9 @@ namespace LJH.Scripts.Player
             _cdUI.UpdateCD(_currentCD/cd);
         }
 
-        public void ChangeSpeed(float delta)
+        public void ChangeSpeed(float percentageDelta)
         {
-            maxSpeed += delta;
-            if (maxSpeed < 5) maxSpeed = 5;
+            maxSpeed *= 1 + percentageDelta*0.01f;
         }
         
     }

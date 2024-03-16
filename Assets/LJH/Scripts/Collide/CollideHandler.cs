@@ -13,6 +13,9 @@ namespace LJH.Scripts.Collide
         {
             //HapticPatterns.PlayEmphasis();
             
+            collider1.CollisionEvent?.Invoke();
+            collider2.CollisionEvent?.Invoke();
+            
             PFCLog.Info($"碰撞处理:{tag1},{tag2}");
             if (tag1 == "Boundary" && tag2 == "Thorn")
             {
