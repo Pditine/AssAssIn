@@ -7,7 +7,11 @@ namespace LJH.Scripts.Player
     {
         private PlayerController _thePlayer;
 
-        public void BindPlayer(PlayerController targetPlayer) => _thePlayer = targetPlayer;
+        public void BindPlayer(PlayerController targetPlayer)
+        {
+            _thePlayer = targetPlayer;
+            _thePlayer.TheInput = GetComponent<PlayerInput>();
+        }
 
         public void ChangeDirection(InputAction.CallbackContext ctx)
         {

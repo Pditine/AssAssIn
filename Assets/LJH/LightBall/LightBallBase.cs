@@ -13,6 +13,7 @@ namespace LJH.LightBall
         {
             if (other.CompareTag("Player"))
             {
+                PFCLog.Info("碰撞:"+gameObject.name);
                 AddBuff(other.GetComponent<PlayerController>());
                 BeDestroy();
             }

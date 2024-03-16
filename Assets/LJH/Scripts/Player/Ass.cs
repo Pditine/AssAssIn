@@ -25,7 +25,7 @@ namespace LJH.Scripts.Player
 
         public void ChangeScale(float delta)
         {
-            CurrentScale += assMinScale;
+            CurrentScale += delta;
             if (CurrentScale < assMinScale)
                 CurrentScale = assMinScale;
         }
