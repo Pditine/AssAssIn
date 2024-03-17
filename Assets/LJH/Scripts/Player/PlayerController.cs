@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
+using Hmxs.Toolkit.Flow.Timer;
 using LJH.Scripts.UI;
+using MoreMountains.Feedbacks;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -39,8 +42,14 @@ namespace LJH.Scripts.Player
 
         public bool CanMove;
 
+        [Title("Effect")]
+        [SerializeField] private MMF_Player hitFeedback;
+        [SerializeField] private MMF_Player loseFeedback;
+        private MMScaleShaker _scaleShaker;
+
         private void Start()
         {
+            _scaleShaker = GetComponent<MMScaleShaker>();
             Direction = transform.right;
             _cdUI = FindObjectsOfType<PlayerCD>().FirstOrDefault(p=>p.ID == id);
             if(!_cdUI)
@@ -119,11 +128,15 @@ namespace LJH.Scripts.Player
         public void BeDestroy()
         {
             CanMove = false;
-            DelayUtility.Delay(0.5f, () =>
-            {
-                Destroy(gameObject);
-            });
-            
+            // DelayUtility.Delay(0.5f, () =>
+            // {
+            //     Destroy(gameObject);
+            // });
+            // Hmxs: Replace with realtime timer; to enable more accurate timing control
+            Timer.Register(
+                duration: 4f,
+                onComplete: () => Destroy(gameObject),
+                useRealTime: true);
         }
         
         public void LastThorn()
@@ -134,6 +147,7 @@ namespace LJH.Scripts.Player
                 _theThorn.gameObject.SetActive(false);
             _theThorn = thorns[_currentThornIndex];
             _theThorn.gameObject.SetActive(true);
+            _scaleShaker.TargetTransform = _theThorn.transform;
         }
 
         public void NextThorn()
@@ -144,6 +158,7 @@ namespace LJH.Scripts.Player
                 _theThorn.gameObject.SetActive(false);
             _theThorn = thorns[_currentThornIndex];
             _theThorn.gameObject.SetActive(true);
+            _scaleShaker.TargetTransform = _theThorn.transform;
         }
         public void LastAss()
         {
@@ -163,5 +178,8 @@ namespace LJH.Scripts.Player
             _theAss = asses[_currentAssIndex];
             _theAss.gameObject.SetActive(true);
         }
+
+        public void HitFeedback() => hitFeedback.PlayFeedbacks();
+        public void LoseFeedback() => loseFeedback.PlayFeedbacks();
     }
 }

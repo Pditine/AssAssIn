@@ -25,6 +25,7 @@ namespace LJH.Scripts.Collide
                 var originDirection = thePlayer.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 thePlayer.Direction = Out_Direction;
+                thePlayer.HitFeedback();
                 //collider1.transform.position += (Vector3)thePlayer.Direction;
                 return;
             }
@@ -45,13 +46,16 @@ namespace LJH.Scripts.Collide
                 var thePlayer2 = (collider2 as Thorn).ThePlayer;
                 (thePlayer1.Direction, thePlayer2.Direction) = (thePlayer2.Direction, thePlayer1.Direction);
                 (thePlayer1.CurrentSpeed, thePlayer2.CurrentSpeed) = (thePlayer2.CurrentSpeed, thePlayer1.CurrentSpeed);
+                thePlayer1.HitFeedback();
+                thePlayer2.HitFeedback();
                 return;
             }
 
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
                 CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.02f,4);
-                (collider2 as Ass).ThePlayer.BeDestroy();
+                (collider2 as Ass)?.ThePlayer.BeDestroy();
+                (collider2 as Ass)?.ThePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");
                 return;
             }

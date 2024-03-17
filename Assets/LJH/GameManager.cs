@@ -1,3 +1,4 @@
+using Hmxs.Toolkit.Flow.Timer;
 using PurpleFlowerCore.Event;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
@@ -32,10 +33,10 @@ namespace LJH
         private void GameOver()
         {
             Time.timeScale = 0.3f;
-            FadeUtility.FadeInAndStay(blackCurtain,30, () =>
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            });
+            FadeUtility.FadeInAndStay(
+                blackCurtain,
+                30,
+                () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
         }
 
         private void GameStart()
