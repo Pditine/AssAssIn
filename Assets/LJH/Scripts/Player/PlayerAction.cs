@@ -1,4 +1,4 @@
-using System;
+using HighlightPlus2D;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,7 +9,8 @@ namespace LJH.Scripts.Player
     {
         [ReadOnly] [SerializeField] private bool canSelect = true;
         private bool _ready;
-        public bool Ready => _ready;// 期望判断玩家是否准备就绪以开始生成光球
+        public bool Ready => _ready;
+        private bool _selectAssOrThorn;
         private PlayerController _thePlayer;
 
         private void Start()
@@ -43,6 +44,8 @@ namespace LJH.Scripts.Player
 
         public void Select(InputAction.CallbackContext ctx)
         {
+            SetPlayerHighLight(false);
+            
             var input = ctx.ReadValue<Vector2>();
             if (!canSelect)
             {
@@ -53,36 +56,60 @@ namespace LJH.Scripts.Player
             var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
             switch (angle)
             {
+
                 case >= -45 and <= 45:
                     // Right
                     //Debug.Log("Right");
-                    _thePlayer.NextAss();
+                    //_thePlayer.NextAss();
+                    _selectAssOrThorn = !_selectAssOrThorn;
                     break;
                 case >= 45 and <= 135:
                     // Up
-                    _thePlayer.LastThorn();
+                    if(_selectAssOrThorn)
+                        _thePlayer.LastAss();
+                    else
+                        _thePlayer.LastThorn();
                     break;
                 case >= -135 and <= -45:
                     // Down
-                    _thePlayer.NextThorn();
+                    if(_selectAssOrThorn)
+                        _thePlayer.NextAss();
+                    else
+                        _thePlayer.NextThorn();
                     break;
                 default:
                     // Left
-                    _thePlayer.LastAss();
+                    //_thePlayer.LastAss();
+                    _selectAssOrThorn = !_selectAssOrThorn;
                     break;
             }
 
+            SetPlayerHighLight(true);
             canSelect = false;
         }
 
         public void Confirm(InputAction.CallbackContext ctx)
         {
-            PlayerActionManager.Instance.CheckReady();
+            _ready = true;
             GetComponent<PlayerInput>().SwitchCurrentActionMap("PlayerInput");
+            PlayerActionManager.Instance.CheckReady();
+        }
+
+        public void StartFight()
+        {
+            _thePlayer.CanMove = true;
         }
 
         #endregion
 
         public void OnDeviceLost(PlayerInput playerInput) => Destroy(gameObject);
+
+        private void SetPlayerHighLight(bool isHighLight)
+        {
+            if (_selectAssOrThorn)
+                _thePlayer.TheAss.GetComponent<HighlightEffect2D>().highlighted = isHighLight;
+            else
+                _thePlayer.TheThorn.GetComponent<HighlightEffect2D>().highlighted = isHighLight;
+        }
     }
 }

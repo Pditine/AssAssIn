@@ -7,19 +7,25 @@ namespace LJH.Scripts.Player
 {
     public class PlayerActionManager : SingletonMono<PlayerActionManager>
     {
-        [SerializeField] private List<PlayerAction> players = new();
+        private readonly List<PlayerAction> _players = new();
 
         
         public void AddPlayer(PlayerAction thePlayer)
         {
-            players.Add(thePlayer);
+            _players.Add(thePlayer);
         }
 
         public void CheckReady()
         {
-            foreach (var player in players)
+            if (_players.Count <= 1) return;
+            foreach (var player in _players)
             {
                 if (!player.Ready) return;
+            }
+
+            foreach (var player in _players)
+            {
+                player.StartFight();
             }
             EventSystem.EventTrigger("GameStart");
         }

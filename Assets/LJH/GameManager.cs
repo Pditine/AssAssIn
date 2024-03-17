@@ -13,7 +13,7 @@ namespace LJH
         private void Start()
         {
             FadeUtility.FadeOut(blackCurtain,80);
-            Time.timeScale = 0;
+            Time.timeScale = 1;
         }
 
         private void OnEnable()
@@ -31,7 +31,7 @@ namespace LJH
 
         private void GameOver()
         {
-            Time.timeScale = 0.5f;
+            Time.timeScale = 0.3f;
             FadeUtility.FadeInAndStay(blackCurtain,30, () =>
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -40,7 +40,7 @@ namespace LJH
 
         private void GameStart()
         {
-            Time.timeScale = 1;
+            
         }
     }
 }

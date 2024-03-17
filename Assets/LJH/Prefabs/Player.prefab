@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7163595111291306707}
   - component: {fileID: 6262867512393978886}
   - component: {fileID: 1199414135078637428}
+  - component: {fileID: 6598407821842812817}
   m_Layer: 0
   m_Name: Thorn (2)
   m_TagString: Thorn
@@ -189,6 +190,73 @@ PolygonCollider2D:
       - {x: 0.45999998, y: -0.83}
       - {x: 0.78999996, y: -0.74}
   m_UseDelaunayMesh: 0
+--- !u!114 &6598407821842812817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073219593039520011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &1122943667079028343
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +269,7 @@ GameObject:
   - component: {fileID: 7821818522590453933}
   - component: {fileID: 5662480646630776910}
   - component: {fileID: 8813373124389976139}
+  - component: {fileID: 7871946531798363709}
   m_Layer: 0
   m_Name: Ass (0)
   m_TagString: Ass
@@ -387,6 +456,73 @@ PolygonCollider2D:
       - {x: -0.56, y: -0.81}
       - {x: -0.59999996, y: -0.82}
   m_UseDelaunayMesh: 0
+--- !u!114 &7871946531798363709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122943667079028343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &2467289949901680377
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +668,7 @@ GameObject:
   - component: {fileID: 340369809456445386}
   - component: {fileID: 2040794725846248154}
   - component: {fileID: 6280138350354105067}
+  - component: {fileID: 6286016639601949263}
   m_Layer: 0
   m_Name: Ass (1)
   m_TagString: Ass
@@ -722,6 +859,73 @@ PolygonCollider2D:
       - {x: -0.59, y: -0.82}
       - {x: -0.59999996, y: -0.81}
   m_UseDelaunayMesh: 0
+--- !u!114 &6286016639601949263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115364537294149065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &4916044628252753692
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +938,7 @@ GameObject:
   - component: {fileID: 6923992734946031028}
   - component: {fileID: 7175125858749188448}
   - component: {fileID: 6360573387756265448}
+  - component: {fileID: 3216593359686870385}
   m_Layer: 0
   m_Name: Ass (2)
   m_TagString: Ass
@@ -1023,6 +1228,73 @@ PolygonCollider2D:
       - {x: -0.51, y: -0.85499996}
       - {x: -0.63, y: -0.85499996}
   m_UseDelaunayMesh: 0
+--- !u!114 &3216593359686870385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916044628252753692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &5628751892609042104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1307,7 @@ GameObject:
   - component: {fileID: 325665333438564363}
   - component: {fileID: 2048811776690116450}
   - component: {fileID: 759798535271956062}
+  - component: {fileID: 8888571360734722281}
   m_Layer: 0
   m_Name: Ass (3)
   m_TagString: Ass
@@ -1233,6 +1506,73 @@ PolygonCollider2D:
       - {x: -0.32999998, y: -0.835}
       - {x: -0.37, y: -0.84499997}
   m_UseDelaunayMesh: 0
+--- !u!114 &8888571360734722281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628751892609042104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &5629917969549311292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1669,7 @@ GameObject:
   - component: {fileID: 2392782781227122806}
   - component: {fileID: 719518438580349452}
   - component: {fileID: 8202804182413302716}
+  - component: {fileID: 2651317861788342729}
   m_Layer: 0
   m_Name: Ass (4)
   m_TagString: Ass
@@ -1533,6 +1874,73 @@ PolygonCollider2D:
       - {x: -0.53, y: -0.825}
       - {x: -0.52, y: -0.815}
   m_UseDelaunayMesh: 0
+--- !u!114 &2651317861788342729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817039508724087592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &6206986469969219188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1953,7 @@ GameObject:
   - component: {fileID: 4335149659637660218}
   - component: {fileID: 2239275827903783474}
   - component: {fileID: 1720955485753934738}
+  - component: {fileID: 5150954080689796417}
   m_Layer: 0
   m_Name: Thorn (5)
   m_TagString: Thorn
@@ -1705,6 +2114,73 @@ PolygonCollider2D:
       - {x: 0.55, y: -0.72499996}
       - {x: 0.98999995, y: -0.505}
   m_UseDelaunayMesh: 0
+--- !u!114 &5150954080689796417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6206986469969219188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &8350927923615421093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,6 +2193,7 @@ GameObject:
   - component: {fileID: 7405079547775421918}
   - component: {fileID: 523522673195089967}
   - component: {fileID: 1770738648837659}
+  - component: {fileID: 3073883232495881283}
   m_Layer: 0
   m_Name: Thorn (0)
   m_TagString: Thorn
@@ -1882,6 +2359,73 @@ PolygonCollider2D:
       - {x: 0.19999999, y: -0.88}
       - {x: 0.35999998, y: -0.79999995}
   m_UseDelaunayMesh: 0
+--- !u!114 &3073883232495881283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350927923615421093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &8464535229131060175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +2438,7 @@ GameObject:
   - component: {fileID: 4728023232644874083}
   - component: {fileID: 6736856048904048201}
   - component: {fileID: 82237607710484341}
+  - component: {fileID: 7088940050176623189}
   m_Layer: 0
   m_Name: Thorn (1)
   m_TagString: Thorn
@@ -2045,6 +2590,73 @@ PolygonCollider2D:
       - {x: 0.19, y: -0.84499997}
       - {x: 0.76, y: -0.285}
   m_UseDelaunayMesh: 0
+--- !u!114 &7088940050176623189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464535229131060175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &8818693492585698441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2669,7 @@ GameObject:
   - component: {fileID: 4247482697501173257}
   - component: {fileID: 5833889599311813399}
   - component: {fileID: 4546095584850807584}
+  - component: {fileID: 5978209809602688749}
   m_Layer: 0
   m_Name: Thorn (4)
   m_TagString: Thorn
@@ -2229,6 +2842,73 @@ PolygonCollider2D:
       - {x: 0.21, y: -0.885}
       - {x: 0.37, y: -0.805}
   m_UseDelaunayMesh: 0
+--- !u!114 &5978209809602688749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8818693492585698441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &8834585981912437915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,6 +2921,7 @@ GameObject:
   - component: {fileID: 5881129169973103862}
   - component: {fileID: 8424625894254354954}
   - component: {fileID: 3684171903086128781}
+  - component: {fileID: 2690765887927662660}
   m_Layer: 0
   m_Name: Thorn (3)
   m_TagString: Thorn
@@ -2395,6 +3076,73 @@ PolygonCollider2D:
       - {x: 0.71, y: -0.615}
       - {x: 0.71, y: -0.555}
   m_UseDelaunayMesh: 0
+--- !u!114 &2690765887927662660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8834585981912437915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503353ae16e0438ab7a973ce8ca421b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewInEditor: 1
+  renderingLayer: 0
+  alwaysOnTop: 0
+  effectGroup: 0
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  occluder: 0
+  _highlighted: 0
+  ignore: 0
+  polygonPacking: 0
+  preserveMesh: 0
+  outlineExclusive: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  overlay: 0.5
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayRenderQueue: 3001
+  outline: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 0.5
+  outlineQuality: 0
+  outlineSmooth: 0
+  glow: 0
+  glowWidth: 1.5
+  glowDithering: 1
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowSmooth: 0
+  glowQuality: 0
+  glowPasses: []
+  zoomScale: 1
+  shadowIntensity: 0
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  shadowOffset: {x: 0.1, y: -0.1}
+  shadow3D: 0
+  seeThrough: 2
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  pixelSnap: 0
+  alphaCutOff: 0.05
+  autoSize: 1
+  center: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+  aspectRatio: 1
+  pivotPos: {x: 0, y: 0}
+  rmsCount: 0
+  scaleBeforeZoom: {x: 0, y: 0, z: 0}
+  scaleAfterZoom: {x: 0, y: 0, z: 0}
 --- !u!1 &9146728619046158787
 GameObject:
   m_ObjectHideFlags: 0

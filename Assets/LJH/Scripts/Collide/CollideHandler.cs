@@ -25,7 +25,7 @@ namespace LJH.Scripts.Collide
                 var originDirection = thePlayer.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 thePlayer.Direction = Out_Direction;
-                collider1.transform.position += (Vector3)thePlayer.Direction;
+                //collider1.transform.position += (Vector3)thePlayer.Direction;
                 return;
             }
             

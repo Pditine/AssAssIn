@@ -5,7 +5,6 @@ using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 namespace LJH.Scripts.Player
 {
@@ -38,6 +37,8 @@ namespace LJH.Scripts.Player
         private Ass _theAss;
         public Ass TheAss => _theAss;
 
+        public bool CanMove;
+
         private void Start()
         {
             Direction = transform.right;
@@ -62,6 +63,7 @@ namespace LJH.Scripts.Player
 
         public void ChangeDirection(InputAction.CallbackContext ctx)
         {
+            if (!CanMove) return;
             if (!_isCharging) return;
             var tempInputDirection = _inputDirection;
             _inputDirection = ctx.ReadValue<Vector2>().normalized;
@@ -72,6 +74,7 @@ namespace LJH.Scripts.Player
 
         public void Launch(InputAction.CallbackContext ctx)
         {
+            if (!CanMove) return;
             if (_currentCD > 0) return;
             
             if (ctx.started)
@@ -115,7 +118,8 @@ namespace LJH.Scripts.Player
 
         public void BeDestroy()
         {
-            DelayUtility.Delay(2, () =>
+            CanMove = false;
+            DelayUtility.Delay(0.5f, () =>
             {
                 Destroy(gameObject);
             });
