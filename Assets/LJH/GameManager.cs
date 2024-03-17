@@ -13,7 +13,7 @@ namespace LJH
         private void Start()
         {
             FadeUtility.FadeOut(blackCurtain,80);
-            Time.timeScale = 1;
+            Time.timeScale = 0;
         }
 
         private void OnEnable()

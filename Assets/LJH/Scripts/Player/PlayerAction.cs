@@ -1,3 +1,4 @@
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,8 +9,13 @@ namespace LJH.Scripts.Player
     {
         [ReadOnly] [SerializeField] private bool canSelect = true;
         private bool _ready;
-        private bool Ready => _ready;// 期望判断玩家是否准备就绪以开始生成光球
+        public bool Ready => _ready;// 期望判断玩家是否准备就绪以开始生成光球
         private PlayerController _thePlayer;
+
+        private void Start()
+        {
+            PlayerActionManager.Instance.AddPlayer(this);
+        }
 
         public void BindPlayer(PlayerController targetPlayer)
         {
@@ -71,6 +77,7 @@ namespace LJH.Scripts.Player
 
         public void Confirm(InputAction.CallbackContext ctx)
         {
+            PlayerActionManager.Instance.CheckReady();
             GetComponent<PlayerInput>().SwitchCurrentActionMap("PlayerInput");
         }
 

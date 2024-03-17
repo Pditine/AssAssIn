@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using LJH.Scripts.UI;
 using PurpleFlowerCore;
+using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -114,7 +115,11 @@ namespace LJH.Scripts.Player
 
         public void BeDestroy()
         {
-            Destroy(gameObject);
+            DelayUtility.Delay(2, () =>
+            {
+                Destroy(gameObject);
+            });
+            
         }
         
         public void LastThorn()
