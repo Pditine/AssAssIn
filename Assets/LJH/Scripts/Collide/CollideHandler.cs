@@ -3,7 +3,8 @@ using UnityEngine;
 using LJH.Scripts.Player;
 using Lofelt.NiceVibrations;
 using PurpleFlowerCore;
-    
+using PurpleFlowerCore.Event;
+
 namespace LJH.Scripts.Collide
 {
     public static class CollideHandler
@@ -48,7 +49,8 @@ namespace LJH.Scripts.Collide
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
                 PFCLog.Info("玩家:"+(collider1 as Thorn).ThePlayer.ID+"胜利");
-                //todo: game over
+                (collider2 as Thorn).ThePlayer.BeDestroy();
+                EventSystem.EventTrigger("GameOver");
                 return;
             }
 

@@ -7,7 +7,8 @@ namespace LJH.Scripts.Player
     public class PlayerAction : MonoBehaviour
     {
         [ReadOnly] [SerializeField] private bool canSelect = true;
-
+        private bool _ready;
+        private bool Ready => _ready;// 期望判断玩家是否准备就绪以开始生成光球
         private PlayerController _thePlayer;
 
         public void BindPlayer(PlayerController targetPlayer)
@@ -48,19 +49,20 @@ namespace LJH.Scripts.Player
             {
                 case >= -45 and <= 45:
                     // Right
-                    Debug.Log("Right");
+                    //Debug.Log("Right");
+                    _thePlayer.NextAss();
                     break;
                 case >= 45 and <= 135:
                     // Up
-                    Debug.Log("Up");
+                    _thePlayer.LastThorn();
                     break;
                 case >= -135 and <= -45:
-                    // Left
-                    Debug.Log("Left");
+                    // Down
+                    _thePlayer.NextThorn();
                     break;
                 default:
-                    // Down
-                    Debug.Log("Down");
+                    // Left
+                    _thePlayer.LastAss();
                     break;
             }
 
@@ -69,8 +71,7 @@ namespace LJH.Scripts.Player
 
         public void Confirm(InputAction.CallbackContext ctx)
         {
-            // confirm
-            Debug.Log(ctx.ReadValue<bool>());
+            GetComponent<PlayerInput>().SwitchCurrentActionMap("PlayerInput");
         }
 
         #endregion

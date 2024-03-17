@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using PurpleFlowerCore;
+using PurpleFlowerCore.Event;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,11 +14,32 @@ namespace LJH.LightBall
 
         [SerializeField] private List<GameObject> lightBalls = new();
 
+        private void OnEnable()
+        {
+            EventSystem.AddEventListener("GameStart",StartCreateLightBall);
+            EventSystem.AddEventListener("GameOver",StopCreateLightBall);
+        }
+
+        private void OnDisable()
+        {
+            EventSystem.RemoveEventListener("GameStart",StartCreateLightBall);
+            EventSystem.RemoveEventListener("GameOver",StopCreateLightBall);
+        }
+
+        private void StartCreateLightBall()
+        {
+            ProcessSystem.GetProcess("CreateLightBall_Loop").Start_();
+        }
+
+        private void StopCreateLightBall()
+        {
+            ProcessSystem.GetProcess("CreateLightBall_Loop").Pause();
+        }
+        
         private void Start()
         {
             var theProcess = ProcessSystem.CreateProcess("CreateLightBall_Loop",true);
             theProcess.Add(new WaitNode(4f)).Add(new ActionNode(CreateLightBall));
-            theProcess.Start_();
         }
 
         private void CreateLightBall()

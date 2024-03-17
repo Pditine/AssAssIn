@@ -29,6 +29,8 @@ namespace LJH.Scripts.Player
 
         [SerializeField] private List<Thorn> thorns = new();
         [SerializeField] private List<Ass> asses = new();
+        private int _currentThornIndex=-1;
+        private int _currentAssIndex=-1;
 
         private Thorn _theThorn;
         public Thorn TheThorn => _theThorn;
@@ -41,8 +43,8 @@ namespace LJH.Scripts.Player
             _cdUI = FindObjectsOfType<PlayerCD>().FirstOrDefault(p=>p.ID == id);
             if(!_cdUI)
                 PFCLog.Error("未找到UI");
-            ChangeThorn(0);
-            ChangeAss(1);
+            NextThorn();
+            NextAss();
         }
 
         private void FixedUpdate()
@@ -110,19 +112,46 @@ namespace LJH.Scripts.Player
             maxSpeed *= 1 + percentageDelta*0.01f;
         }
 
-        public void ChangeThorn(int thornIndex)
+        public void BeDestroy()
         {
-            if(_theThorn)
-                _theThorn.gameObject.SetActive(false);
-            _theThorn = thorns[thornIndex];
-            _theThorn.gameObject.SetActive(true);
+            Destroy(gameObject);
         }
         
-        public void ChangeAss(int assIndex)
+        public void LastThorn()
         {
+            _currentThornIndex--;
+            if (_currentThornIndex < 0) _currentThornIndex = thorns.Count-1;
+            if(_theThorn)
+                _theThorn.gameObject.SetActive(false);
+            _theThorn = thorns[_currentThornIndex];
+            _theThorn.gameObject.SetActive(true);
+        }
+
+        public void NextThorn()
+        {
+            _currentThornIndex++;
+            if (_currentThornIndex >= thorns.Count) _currentThornIndex = 0;
+            if(_theThorn)
+                _theThorn.gameObject.SetActive(false);
+            _theThorn = thorns[_currentThornIndex];
+            _theThorn.gameObject.SetActive(true);
+        }
+        public void LastAss()
+        {
+            _currentAssIndex--;
+            if (_currentAssIndex < 0) _currentAssIndex = asses.Count-1;
             if(_theAss)
                 _theAss.gameObject.SetActive(false);
-            _theAss = asses[assIndex];
+            _theAss = asses[_currentAssIndex];
+            _theAss.gameObject.SetActive(true);
+        }
+        public void NextAss()
+        {
+            _currentAssIndex++;
+            if (_currentAssIndex >= asses.Count) _currentAssIndex = 0;
+            if(_theAss)
+                _theAss.gameObject.SetActive(false);
+            _theAss = asses[_currentAssIndex];
             _theAss.gameObject.SetActive(true);
         }
     }

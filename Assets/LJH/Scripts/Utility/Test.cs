@@ -10,7 +10,15 @@ namespace LJH.Scripts.Utility
         private void Update()
         {
             if(Input.GetKeyDown(KeyCode.K))
-                _playerController.ChangeThorn(1);
+            {
+                _playerController.NextThorn();
+                _playerController.NextAss();
+            }
+            if(Input.GetKeyDown(KeyCode.J))
+            {
+                _playerController.LastAss();
+                _playerController.LastThorn();
+            }
         }
     }
 }
