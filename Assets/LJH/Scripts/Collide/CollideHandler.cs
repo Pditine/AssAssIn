@@ -1,6 +1,7 @@
 ﻿using LJH.Scripts.Map;
 using UnityEngine;
 using LJH.Scripts.Player;
+using LJH.Scripts.Utility;
 using Lofelt.NiceVibrations;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Event;
@@ -24,6 +25,7 @@ namespace LJH.Scripts.Collide
                 var originDirection = thePlayer.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 thePlayer.Direction = Out_Direction;
+                collider1.transform.position += (Vector3)thePlayer.Direction;
                 return;
             }
             
@@ -48,8 +50,16 @@ namespace LJH.Scripts.Collide
 
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
-                PFCLog.Info("玩家:"+(collider1 as Thorn).ThePlayer.ID+"胜利");
-                (collider2 as Thorn).ThePlayer.BeDestroy();
+                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.02f,4);
+                (collider2 as Ass).ThePlayer.BeDestroy();
+                EventSystem.EventTrigger("GameOver");
+                return;
+            }
+            
+            if (tag1 == "BarrierThorn" && tag2 == "Ass")
+            {
+                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.02f,4);
+                (collider2 as Ass).ThePlayer.BeDestroy();
                 EventSystem.EventTrigger("GameOver");
                 return;
             }
@@ -68,7 +78,7 @@ namespace LJH.Scripts.Collide
             if (tag1 == "BarrierPedestal" && tag2 == "Thorn")
             {
                 var thePlayer = (collider2 as Thorn).ThePlayer;
-                var theBarrier = (collider1 as BarrierPedestal).TheBarrier;
+                var theBarrier = (collider1 as BarrierPedestal).TheBarrier; 
                 theBarrier.Direction = thePlayer.Direction;
                 thePlayer.Direction = -thePlayer.Direction;
                 theBarrier.CurrentSpeed = thePlayer.CurrentSpeed/1.5f;

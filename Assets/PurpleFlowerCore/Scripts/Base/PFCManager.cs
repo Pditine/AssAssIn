@@ -33,6 +33,7 @@ namespace PurpleFlowerCore.Base
             if(_instance is not null)
                 Destroy(_instance.gameObject);
             _instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         private void OnDisable()

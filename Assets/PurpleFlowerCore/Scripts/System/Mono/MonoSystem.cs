@@ -17,7 +17,11 @@ namespace PurpleFlowerCore
         {
             get
             {
-                if (_instance is not null) return _instance;
+                if (_instance is not null)
+                {
+                    Debug.Log(_instance);
+                    return _instance;
+                }
                 var root = new GameObject("Mono")
                 {
                     transform =
