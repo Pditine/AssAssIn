@@ -6,7 +6,7 @@ namespace LJH.LightBall
     {
         protected override void AddBuff(PlayerController thePlayer)
         {
-            thePlayer.ChangeSpeed(1);
+            thePlayer.ChangeSpeed(10);
         }
     }
 }
