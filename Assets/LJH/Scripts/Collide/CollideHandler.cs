@@ -53,7 +53,7 @@ namespace LJH.Scripts.Collide
 
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
-                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.02f,4);
+                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
                 (collider2 as Ass)?.ThePlayer.BeDestroy();
                 (collider2 as Ass)?.ThePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");
@@ -62,7 +62,7 @@ namespace LJH.Scripts.Collide
             
             if (tag1 == "BarrierThorn" && tag2 == "Ass")
             {
-                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.02f,4);
+                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
                 (collider2 as Ass).ThePlayer.BeDestroy();
                 (collider2 as Ass)?.ThePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");

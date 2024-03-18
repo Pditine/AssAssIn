@@ -34,7 +34,7 @@ namespace LJH
             Time.timeScale = 0.3f;
             FadeUtility.FadeInAndStay(
                 blackCurtain,
-                60,
+                45,
                 () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
         }
 

@@ -6,7 +6,7 @@ namespace LJH.Scripts.Collide
 {
     public abstract class ColliderBase : MonoBehaviour
     {
-        private float _collideCD = 0.2f;
+        private float _collideCD = 0.1f;
         
         private float _currentCollideCD;
 
