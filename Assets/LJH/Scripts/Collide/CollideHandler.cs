@@ -64,6 +64,7 @@ namespace LJH.Scripts.Collide
             {
                 CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.02f,4);
                 (collider2 as Ass).ThePlayer.BeDestroy();
+                (collider2 as Ass)?.ThePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");
                 return;
             }

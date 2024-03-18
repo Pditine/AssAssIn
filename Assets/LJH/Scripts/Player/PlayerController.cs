@@ -152,6 +152,7 @@ namespace LJH.Scripts.Player
 
         public void NextThorn()
         {
+            //PFCLog.Info("nextThorn");
             _currentThornIndex++;
             if (_currentThornIndex >= thorns.Count) _currentThornIndex = 0;
             if(_theThorn)

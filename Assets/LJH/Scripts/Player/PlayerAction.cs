@@ -1,4 +1,5 @@
 using HighlightPlus2D;
+using PurpleFlowerCore;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,10 +13,13 @@ namespace LJH.Scripts.Player
         public bool Ready => _ready;
         private bool _selectAssOrThorn;
         private PlayerController _thePlayer;
+        public PlayerController ThePlayer => _thePlayer;
+        private PlayerInput PlayerInput => GetComponent<PlayerInput>();
 
         private void Start()
         {
             PlayerActionManager.Instance.AddPlayer(this);
+           // _playerInput.actions["Select"].performed += Select;
         }
 
         public void BindPlayer(PlayerController targetPlayer)
@@ -44,15 +48,16 @@ namespace LJH.Scripts.Player
 
         public void Select(InputAction.CallbackContext ctx)
         {
-            SetPlayerHighLight(false);
-            
+            if (_ready) return;    
             var input = ctx.ReadValue<Vector2>();
             if (!canSelect)
             {
                 if (input == Vector2.zero) canSelect = true;
                 return;
             }
-
+            
+            SetPlayerHighLight(false);
+            
             var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
             switch (angle)
             {
@@ -72,6 +77,7 @@ namespace LJH.Scripts.Player
                     break;
                 case >= -135 and <= -45:
                     // Down
+                    Debug.Log("down");
                     if(_selectAssOrThorn)
                         _thePlayer.NextAss();
                     else
@@ -90,14 +96,17 @@ namespace LJH.Scripts.Player
 
         public void Confirm(InputAction.CallbackContext ctx)
         {
-            _ready = true;
-            GetComponent<PlayerInput>().SwitchCurrentActionMap("PlayerInput");
+            _ready = !_ready;
+            SetPlayerHighLight(!_ready);
+            Debug.Log(!_ready);
+            PlayerActionManager.Instance.SetPrepareUI(PlayerInput.playerIndex,_ready);
             PlayerActionManager.Instance.CheckReady();
         }
 
         public void StartFight()
         {
-            _thePlayer.CanMove = true;
+            GetComponent<PlayerInput>().SwitchCurrentActionMap("PlayerInput");
+            //ThePlayer.CanMove = true;
         }
 
         #endregion

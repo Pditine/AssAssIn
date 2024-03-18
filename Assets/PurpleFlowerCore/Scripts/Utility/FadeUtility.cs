@@ -18,7 +18,7 @@ namespace PurpleFlowerCore.Utility
             graphic.enabled = true;
             while (graphic.color.a>0.05f)
             {
-                yield return new WaitForSeconds(1/speed);
+                yield return new WaitForSecondsRealtime(1/speed);
                 graphic.color -= new Color(0, 0, 0, 0.01f);
             }
             graphic.color = new Color(graphic.color.r, graphic.color.g, graphic.color.b, 0);

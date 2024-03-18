@@ -11,6 +11,9 @@ namespace Hmxs.Scripts
     {
         [SerializeField] private GameObject uiLeft;
         [SerializeField] private GameObject uiRight;
+        [SerializeField] private GameObject prepareUILeft;
+        [SerializeField] private GameObject prepareUIRight;
+
         public PlayerController playerLeft;
         public PlayerController playerRight;
 
@@ -34,6 +37,7 @@ namespace Hmxs.Scripts
                 playerInput.GetComponent<PlayerAction>().BindPlayer(playerLeft);
                 activePlayers[0] = playerInput.playerIndex;
                 uiLeft.SetActive(false);
+                prepareUILeft.SetActive(true);
                 Debug.Log("Player Join: " + playerInput.devices[0].name);
             }
             else if (activePlayers[1] == -1)
@@ -41,6 +45,7 @@ namespace Hmxs.Scripts
                 playerInput.GetComponent<PlayerAction>().BindPlayer(playerRight);
                 activePlayers[1] = playerInput.playerIndex;
                 uiRight.SetActive(false);
+                prepareUIRight.SetActive(true);
                 Debug.Log("Player Join: " + playerInput.devices[0].name);
             }
             else
@@ -64,5 +69,7 @@ namespace Hmxs.Scripts
             else
                 Debug.Log("No player to leave");
         }
+
+
     }
 }

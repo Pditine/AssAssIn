@@ -16,17 +16,22 @@ namespace LJH.Scripts.Utility
         {
             var main = Camera.main;
             var mainTransform = main.transform;
-            while (Vector2.SqrMagnitude(targetPos-main.transform.position)>0.03f&&main)
+            if (mainTransform)
             {
-                yield return new WaitForSeconds(0.01f);
-                mainTransform.position = Vector2.Lerp(main.transform.position, targetPos,zoomRate);
-                main.orthographicSize = Mathf.Lerp(main.orthographicSize, orthographicSize, zoomRate);
+                while (Vector2.SqrMagnitude(targetPos - main.transform.position) > 0.03f && main)
+                {
+                    yield return new WaitForSecondsRealtime(0.01f);
+
+                    mainTransform.position = Vector2.Lerp(main.transform.position, targetPos, zoomRate);
+                    main.orthographicSize = Mathf.Lerp(main.orthographicSize, orthographicSize, zoomRate);
+                    mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
+                }
+
+                mainTransform.position = targetPos;
+                main.orthographicSize = orthographicSize;
                 mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
+                callBack?.Invoke();
             }
-            mainTransform.position = targetPos;
-            main.orthographicSize = orthographicSize;
-            mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
-            callBack?.Invoke();
         }
         
         public static void UIMoveAndZoom(RectTransform canvas,Vector3 targetPos, float moveSpeed, float zoomSpeed,
@@ -40,7 +45,7 @@ namespace LJH.Scripts.Utility
         {
             while (canvas&&Vector3.SqrMagnitude(canvas.position-Vector3.zero)>1f)
             {
-                yield return new WaitForSeconds(0.01f);
+                yield return new WaitForSecondsRealtime(0.01f);
                 var direction = (Vector3.zero-targetPos).normalized;
                 if(canvas)
                 {

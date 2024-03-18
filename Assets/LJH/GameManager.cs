@@ -1,4 +1,3 @@
-using Hmxs.Toolkit.Flow.Timer;
 using PurpleFlowerCore.Event;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
@@ -35,7 +34,7 @@ namespace LJH
             Time.timeScale = 0.3f;
             FadeUtility.FadeInAndStay(
                 blackCurtain,
-                30,
+                60,
                 () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
         }
 
