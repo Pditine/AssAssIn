@@ -19,6 +19,7 @@ namespace LJH.LightBall
                 AddBuff(other.GetComponent<PlayerController>());
                 BeDestroy();
                 HasTriggered = true;
+                PFCLog.Info("父物体");
             }
             if (other.CompareTag("Thorn")|| other.CompareTag("Ass"))
             {
@@ -26,6 +27,7 @@ namespace LJH.LightBall
                 AddBuff(other.GetComponentInParent<PlayerController>());
                 BeDestroy();
                 HasTriggered = true;
+                PFCLog.Info("子物体");
             }
         }
         protected abstract void AddBuff(PlayerController thePlayer);

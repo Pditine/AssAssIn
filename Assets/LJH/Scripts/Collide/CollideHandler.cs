@@ -56,18 +56,22 @@ namespace LJH.Scripts.Collide
 
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
-                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
-                (collider2 as Ass)?.ThePlayer.BeDestroy();
-                (collider2 as Ass)?.ThePlayer.LoseFeedback();
+                //CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
+                var thePlayer = (collider2 as Ass).ThePlayer;
+                GameManager.Instance.PlayerDead(thePlayer.transform.position,thePlayer.ID);
+                thePlayer.BeDestroy();
+                thePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");
                 return;
             }
             
             if (tag1 == "BarrierThorn" && tag2 == "Ass")
             {
-                CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
-                (collider2 as Ass).ThePlayer.BeDestroy();
-                (collider2 as Ass)?.ThePlayer.LoseFeedback();
+                //CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
+                var thePlayer = (collider2 as Ass).ThePlayer;
+                GameManager.Instance.PlayerDead(thePlayer.transform.position,thePlayer.ID);
+                thePlayer.BeDestroy();
+                thePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");
                 return;
             }

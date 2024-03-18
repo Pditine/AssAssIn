@@ -1,3 +1,6 @@
+using Cinemachine;
+using LJH.Scripts.Utility;
+using PurpleFlowerCore;
 using PurpleFlowerCore.Event;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
@@ -6,9 +9,13 @@ using UnityEngine.UI;
 
 namespace LJH
 {
-    public class GameManager : MonoBehaviour
+    public class GameManager : SingletonMono<GameManager>
     {
         [SerializeField] private Image blackCurtain;
+
+        [SerializeField] private CinemachineVirtualCamera camera;
+        [SerializeField] private Text playerDeadInfo;
+        
 
         private void Start()
         {
@@ -41,6 +48,13 @@ namespace LJH
         private void GameStart()
         {
             
+        }
+
+        public void PlayerDead(Vector3 position,int playerIndex)
+        {
+            CameraMoveUtility.MoveAndZoom(camera, position, 0.03f, 4);
+            FadeUtility.FadeInAndStay(playerDeadInfo,80);
+            playerDeadInfo.text = $"Player{playerIndex + 1} Died";
         }
     }
 }
