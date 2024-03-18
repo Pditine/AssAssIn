@@ -22116,6 +22116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackCurtain: {fileID: 933548199}
+  camera: {fileID: 818990735}
+  playerDeadInfo: {fileID: 2003597672}
 --- !u!4 &334993379
 Transform:
   m_ObjectHideFlags: 0
@@ -61586,6 +61588,7 @@ GameObject:
   - component: {fileID: 818990735}
   - component: {fileID: 818990736}
   - component: {fileID: 818990737}
+  - component: {fileID: 818990738}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -61601,7 +61604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818990733}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -61686,6 +61689,22 @@ MonoBehaviour:
     m_FrequencyGain: 1
     m_Duration: 1
     m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &818990738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818990733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Width: 2
+  m_Damping: 1
+  m_MinFOV: 3
+  m_MaxFOV: 60
 --- !u!1 &821431747
 GameObject:
   m_ObjectHideFlags: 0
@@ -129606,11 +129625,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 9.392751, y: 5.6249256}
-      - {x: -9.643795, y: 5.716308}
-      - {x: -9.668236, y: -5.413189}
-      - {x: -0.17957675, y: -5.5410824}
-      - {x: 9.381298, y: -5.641872}
+    - - {x: 19.93954, y: 10.453577}
+      - {x: -18.665749, y: 10.6720295}
+      - {x: -18.559761, y: -9.963395}
+      - {x: -18.626652, y: -10.051234}
+      - {x: 1.027586, y: -10.052059}
+      - {x: 19.67395, y: -10.025778}
   m_UseDelaunayMesh: 0
 --- !u!1 &1773573796
 GameObject:
@@ -143334,7 +143354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2003597670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -143351,7 +143371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 479.5, y: -417}
+  m_AnchoredPosition: {x: 0, y: 0.0000038146973}
   m_SizeDelta: {x: 640.01, y: 223.9507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2003597671
@@ -143382,7 +143402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003597669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -143395,7 +143415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ready!
+  m_text: player0 died
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5aaa54a32e3d8c245ada6eec8bfa5634, type: 2}
   m_sharedMaterial: {fileID: -4652454083761134269, guid: 5aaa54a32e3d8c245ada6eec8bfa5634, type: 2}
@@ -143404,8 +143424,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279762688
-  m_fontColor: {r: 0, g: 1, b: 0.09080601, a: 1}
+    rgba: 4278192127
+  m_fontColor: {r: 1, g: 0.026436988, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -143422,8 +143442,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

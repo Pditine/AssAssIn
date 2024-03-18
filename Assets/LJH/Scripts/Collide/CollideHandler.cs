@@ -58,7 +58,7 @@ namespace LJH.Scripts.Collide
             {
                 //CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
                 var thePlayer = (collider2 as Ass).ThePlayer;
-                GameManager.Instance.PlayerDead(thePlayer.transform.position,thePlayer.ID);
+                GameManager.Instance.PlayerDead(thePlayer.transform,thePlayer.ID);
                 thePlayer.BeDestroy();
                 thePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");
@@ -69,7 +69,7 @@ namespace LJH.Scripts.Collide
             {
                 //CameraMoveUtility.MoveAndZoom(collider2.transform.position,0.03f,4);
                 var thePlayer = (collider2 as Ass).ThePlayer;
-                GameManager.Instance.PlayerDead(thePlayer.transform.position,thePlayer.ID);
+                GameManager.Instance.PlayerDead(thePlayer.transform,thePlayer.ID);
                 thePlayer.BeDestroy();
                 thePlayer.LoseFeedback();
                 EventSystem.EventTrigger("GameOver");

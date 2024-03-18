@@ -3,6 +3,7 @@ using LJH.Scripts.Utility;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Event;
 using PurpleFlowerCore.Utility;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,7 +15,7 @@ namespace LJH
         [SerializeField] private Image blackCurtain;
 
         [SerializeField] private CinemachineVirtualCamera camera;
-        [SerializeField] private Text playerDeadInfo;
+        [SerializeField] private TextMeshProUGUI playerDeadInfo;
         
 
         private void Start()
@@ -50,11 +51,13 @@ namespace LJH
             
         }
 
-        public void PlayerDead(Vector3 position,int playerIndex)
+        public void PlayerDead(Transform thePlayer,int playerIndex)
         {
-            CameraMoveUtility.MoveAndZoom(camera, position, 0.03f, 4);
+            CameraMoveUtility.MoveAndZoom(camera,thePlayer.transform, 0.04f, 3);
+            //camera.Follow = thePlayer;
+            //camera.LookAt = thePlayer;
             FadeUtility.FadeInAndStay(playerDeadInfo,80);
-            playerDeadInfo.text = $"Player{playerIndex + 1} Died";
+            playerDeadInfo.text = $"Player{playerIndex} Died";
         }
     }
 }

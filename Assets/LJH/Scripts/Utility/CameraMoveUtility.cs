@@ -35,30 +35,29 @@ namespace LJH.Scripts.Utility
             }
         }
         
-        public static void MoveAndZoom(CinemachineVirtualCamera camera,Vector3 targetPos,float zoomRate,float orthographicSize,UnityAction callBack = null)
+        public static void MoveAndZoom(CinemachineVirtualCamera camera,Transform targetPos,float zoomRate,float orthographicSize,UnityAction callBack = null)
         {
             MonoSystem.Start_Coroutine(DoMoveAndZoom(camera,targetPos,zoomRate,orthographicSize,callBack));
         }
         
-        private static IEnumerator DoMoveAndZoom(CinemachineVirtualCamera camera,Vector3 targetPos,float zoomRate,float orthographicSize,UnityAction callBack = null)
+        private static IEnumerator DoMoveAndZoom(CinemachineVirtualCamera camera,Transform targetPos,float zoomRate,float orthographicSize,UnityAction callBack = null)
         {
             var mainTransform = camera.transform;
-            if (mainTransform)
+
+            while (Vector2.SqrMagnitude(targetPos.position - camera.transform.position) > 0.03f && camera)
             {
-                while (Vector2.SqrMagnitude(targetPos - camera.transform.position) > 0.03f && camera)
-                {
-                    yield return new WaitForSecondsRealtime(0.01f);
+                yield return new WaitForSecondsRealtime(0.01f);
 
-                    mainTransform.position = Vector2.Lerp(camera.transform.position, targetPos, zoomRate);
-                    camera.m_Lens.OrthographicSize = Mathf.Lerp(camera.m_Lens.OrthographicSize, orthographicSize, zoomRate);
-                    mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
-                }
-
-                mainTransform.position = targetPos;
-                camera.m_Lens.OrthographicSize = orthographicSize;
+                mainTransform.position = Vector2.Lerp(camera.transform.position, targetPos.position, zoomRate);
+                camera.m_Lens.OrthographicSize = Mathf.Lerp(camera.m_Lens.OrthographicSize, orthographicSize, zoomRate);
                 mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
-                callBack?.Invoke();
             }
+
+            mainTransform.position = targetPos.position;
+            camera.m_Lens.OrthographicSize = orthographicSize;
+            mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
+            callBack?.Invoke();
+            
         }
         
         public static void UIMoveAndZoom(RectTransform canvas,Vector3 targetPos, float moveSpeed, float zoomSpeed,
@@ -81,6 +80,30 @@ namespace LJH.Scripts.Utility
                 }
             }
             callBack?.Invoke();
+        }
+        
+        public static void Zoom(CinemachineVirtualCamera camera,float zoomRate,float orthographicSize,UnityAction callBack = null)
+        {
+            MonoSystem.Start_Coroutine(DoZoom(camera,zoomRate,orthographicSize,callBack));
+        }
+        
+        private static IEnumerator DoZoom(CinemachineVirtualCamera camera,float zoomRate,float orthographicSize,UnityAction callBack = null)
+        {
+            var mainTransform = camera.transform;
+
+            while (camera.m_Lens.OrthographicSize.Equals(orthographicSize) && camera)
+            {
+                yield return new WaitForSecondsRealtime(0.01f);
+               // mainTransform.position = Vector2.Lerp(camera.transform.position, targetPos, zoomRate);
+                camera.m_Lens.OrthographicSize = Mathf.Lerp(camera.m_Lens.OrthographicSize, orthographicSize, zoomRate);
+                mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
+            }
+
+            //mainTransform.position = targetPos;
+            camera.m_Lens.OrthographicSize = orthographicSize;
+            //mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
+            callBack?.Invoke();
+            
         }
         
     }
