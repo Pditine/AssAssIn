@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Hmxs.Scripts
@@ -28,6 +29,18 @@ namespace Hmxs.Scripts
                                dir.y * collider.size.y * box.transform.localScale.y,
                                0);
             }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.green;
+            var dir = direction.normalized;
+            var collider = boxPrefab.GetComponent<BoxCollider2D>();
+            var position = (number - 0.5f) * new Vector3(
+                dir.x * collider.size.x * collider.transform.localScale.x,
+                dir.y * collider.size.y * collider.transform.localScale.y,
+                0);
+            Gizmos.DrawLine(transform.position, transform.position + position);
         }
     }
 }
