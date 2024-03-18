@@ -1,4 +1,5 @@
-﻿using LJH.Scripts.Map;
+﻿using Hmxs.Scripts;
+using LJH.Scripts.Map;
 using UnityEngine;
 using LJH.Scripts.Player;
 using LJH.Scripts.Utility;
@@ -26,6 +27,7 @@ namespace LJH.Scripts.Collide
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 thePlayer.Direction = Out_Direction;
                 thePlayer.HitFeedback();
+                collider1.transform.GetComponent<VisualBox>()?.Act();
                 //collider1.transform.position += (Vector3)thePlayer.Direction;
                 return;
             }
@@ -35,8 +37,9 @@ namespace LJH.Scripts.Collide
                 var thePlayer = (collider2 as Ass).ThePlayer;
                 var originDirection = thePlayer.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
-                
+
                 thePlayer.Direction = Out_Direction;
+                collider1.transform.GetComponent<VisualBox>()?.Act();
                 return;
             }
             
@@ -97,6 +100,7 @@ namespace LJH.Scripts.Collide
                 var originDirection = theBarrier.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 theBarrier.Direction = Out_Direction;
+                collider1.transform.GetComponent<VisualBox>()?.Act();
                 return;
             }
             
@@ -106,6 +110,7 @@ namespace LJH.Scripts.Collide
                 var originDirection = theBarrier.Direction;
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 theBarrier.Direction = Out_Direction;
+                collider1.transform.GetComponent<VisualBox>()?.Act();
                 return;
             }
             

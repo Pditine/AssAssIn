@@ -3,7 +3,6 @@ using Hmxs.Toolkit.Flow.Timer;
 using MoreMountains.Feedbacks;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Hmxs.Scripts
 {
@@ -22,9 +21,9 @@ namespace Hmxs.Scripts
         [SerializeField] private List<VisualBox> boxesAround = new();
 
         [SerializeField] private MMScaleShaker shaker;
-        [Range(0f, 10f)] [SerializeField] private float defaultShakeRange;
-        [Range(1, 15)] [SerializeField] private int defaultDisperseRange;
-        [Range(0f, 1f)] [SerializeField] private float defaultDisperseRate;
+        [SerializeField] private float defaultShakeRange;
+        [SerializeField] private int defaultDisperseRange;
+        [SerializeField] private float defaultDisperseRate;
 
         private RaycastHit2D[] _hits;
 
@@ -48,13 +47,13 @@ namespace Hmxs.Scripts
         }
 
         // Test
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                Act();
-            }
-        }
+        // private void OnCollisionEnter2D(Collision2D other)
+        // {
+        //     if (other.gameObject.CompareTag("Player"))
+        //     {
+        //         Act();
+        //     }
+        // }
 
         public void Act(float? shakeRange = null, int? disperseRange = null, float? disperseRate = null)
         {
