@@ -35,10 +35,12 @@ namespace LJH
 
         private void GameOver()
         {
+            if (_gameOver) return;
+            _gameOver = true;
             Time.timeScale = 0.3f;
             FadeUtility.FadeInAndStay(
                 blackCurtain,
-                25,
+                20,
                 () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
         }
 
@@ -49,7 +51,8 @@ namespace LJH
 
         public void PlayerDead(Transform thePlayer,int playerIndex)
         {
-            CameraMoveUtility.MoveAndZoom(camera,thePlayer.transform, 0.04f, 3);
+            if(_gameOver)return;
+            CameraMoveUtility.MoveAndZoomForever(camera,thePlayer.transform, 0.04f, 3);
             //camera.Follow = thePlayer;
             //camera.LookAt = thePlayer;
             FadeUtility.FadeInAndStay(playerDeadInfo,80);

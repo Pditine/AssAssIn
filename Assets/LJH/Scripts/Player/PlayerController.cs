@@ -139,23 +139,31 @@ namespace LJH.Scripts.Player
         public void BeDestroy()
         {
             CanMove = false;
-            // DelayUtility.Delay(0.5f, () =>
-            // {
-            //     Destroy(gameObject);
-            // });
-            // Hmxs: Replace with realtime timer; to enable more accurate timing control
-            PFCLog.Info("玩家死亡");
-            Timer.Register(
-                duration: 3.7f,
-                onComplete: () =>
-                {
-                    loseFeedback.PlayFeedbacks();
-                },
-                useRealTime: true);
-            Timer.Register(
-                duration: 4f,
-                onComplete: () => Destroy(gameObject),
-                useRealTime: true);
+            DelayUtility.Delay(3.7f, () =>
+            {
+                loseFeedback.PlayFeedbacks();
+            });
+            DelayUtility.Delay(4, () =>
+            {
+                Destroy(gameObject);
+            });
+            //Hmxs: Replace with realtime timer; to enable more accurate timing control
+            // PFCLog.Info("玩家死亡");
+            // Timer.Register(
+            //     duration: 3.7f,
+            //     onComplete: () =>
+            //     {
+            //         loseFeedback.PlayFeedbacks();
+            //     },
+            //     useRealTime: true);
+            // Timer.Register(
+            //     duration: 4f,
+            //     onComplete: () =>
+            //     {
+            //         Destroy(gameObject);
+            //         PFCLog.Info(gameObject.name);
+            //     },
+            //     useRealTime: true);
         }
         
         public void LastThorn()

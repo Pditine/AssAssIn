@@ -114814,6 +114814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 426465971085148727, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1856345138, guid: bda2f1bcca4c83a41b93976096f428b0, type: 3}
     - target: {fileID: 827933508753537540, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
@@ -114862,6 +114866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4405949548898251432, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1413688948, guid: bda2f1bcca4c83a41b93976096f428b0, type: 3}
     - target: {fileID: 5039602538813561730, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
       propertyPath: id
       value: 1
@@ -114882,6 +114890,18 @@ PrefabInstance:
       propertyPath: slowdownAudio
       value: 
       objectReference: {fileID: 1386798125}
+    - target: {fileID: 5969951084155892037, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2136343066, guid: bda2f1bcca4c83a41b93976096f428b0, type: 3}
+    - target: {fileID: 6493588990272163450, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1732091754, guid: bda2f1bcca4c83a41b93976096f428b0, type: 3}
+    - target: {fileID: 9071189561670432917, guid: 7d9a0534ef4305b449c0804ff83e4176, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 129341093, guid: bda2f1bcca4c83a41b93976096f428b0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

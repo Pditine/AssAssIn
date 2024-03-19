@@ -106,5 +106,23 @@ namespace LJH.Scripts.Utility
             
         }
         
+        public static void MoveAndZoomForever(CinemachineVirtualCamera camera,Transform targetPos,float zoomRate,float orthographicSize)
+        {
+            MonoSystem.Start_Coroutine(DoMoveAndZoom(camera,targetPos,zoomRate,orthographicSize));
+        }
+        
+        private static IEnumerator DoMoveAndZoomForever(CinemachineVirtualCamera camera,Transform targetPos,float zoomRate,float orthographicSize)
+        {
+            var mainTransform = camera.transform;
+
+            while (true)
+            {
+                yield return new WaitForSecondsRealtime(0.01f);
+                mainTransform.position = Vector2.Lerp(camera.transform.position, targetPos.position, zoomRate);
+                camera.m_Lens.OrthographicSize = Mathf.Lerp(camera.m_Lens.OrthographicSize, orthographicSize, zoomRate);
+                mainTransform.position = new Vector3(mainTransform.position.x, mainTransform.position.y, -10);
+            }
+        }
+        
     }
 }

@@ -6,15 +6,18 @@ namespace PurpleFlowerCore.Utility
 {
     public static class DelayUtility
     {
-        public static void Delay(float time,UnityAction action)
+        public static void Delay(float time,UnityAction action,bool canScale = false)
         {
-            MonoSystem.Start_Coroutine(DoDelay(time, action));
+            MonoSystem.Start_Coroutine(DoDelay(time, action,canScale));
         }
 
-        private static IEnumerator DoDelay(float time,UnityAction action)
+        private static IEnumerator DoDelay(float time,UnityAction action,bool canScale)
         {
-            yield return new WaitForSeconds(time);
+            float waitTime = canScale ? time * Time.timeScale : time;
+            yield return new WaitForSecondsRealtime(time);
             action?.Invoke();
         }
+        
+        
     }
 }
