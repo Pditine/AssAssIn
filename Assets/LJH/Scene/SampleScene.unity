@@ -209,8 +209,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -3485,8 +3485,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -4796,8 +4796,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -5195,8 +5195,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -5557,8 +5557,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -6947,8 +6947,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -8641,8 +8641,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -14639,8 +14639,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -15693,8 +15693,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -20669,8 +20669,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -21872,8 +21872,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -22116,8 +22116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackCurtain: {fileID: 933548199}
-  camera: {fileID: 818990735}
-  playerDeadInfo: {fileID: 2003597672}
+  camera: {fileID: 0}
+  playerDeadInfo: {fileID: 0}
 --- !u!4 &334993379
 Transform:
   m_ObjectHideFlags: 0
@@ -22413,8 +22413,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -24107,8 +24107,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -24857,8 +24857,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -25775,8 +25775,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -26137,8 +26137,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -27165,8 +27165,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -29075,8 +29075,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -29967,8 +29967,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -30439,8 +30439,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -30827,8 +30827,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -31021,8 +31021,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -33775,8 +33775,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -35941,8 +35941,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -36219,8 +36219,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -37613,8 +37613,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -37807,8 +37807,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -40435,8 +40435,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -41631,8 +41631,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -45827,8 +45827,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -50954,8 +50954,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -51342,8 +51342,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -51814,8 +51814,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -52008,8 +52008,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -52590,8 +52590,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -53754,8 +53754,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -54032,8 +54032,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -55422,8 +55422,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -56004,8 +56004,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -56864,8 +56864,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -57336,8 +57336,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -59560,8 +59560,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -61384,8 +61384,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -64376,8 +64376,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -65931,8 +65931,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -70351,8 +70351,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -70629,8 +70629,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -71159,8 +71159,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -71547,8 +71547,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -73907,8 +73907,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -75257,8 +75257,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -76762,8 +76762,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -78404,8 +78404,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -78598,8 +78598,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -82967,8 +82967,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -84189,8 +84189,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -84467,8 +84467,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -86277,8 +86277,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -86555,8 +86555,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -86749,8 +86749,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -92258,8 +92258,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -95834,8 +95834,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -98950,8 +98950,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -99144,8 +99144,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -99338,8 +99338,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -102836,8 +102836,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -106146,8 +106146,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -107678,8 +107678,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -108040,8 +108040,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -109708,8 +109708,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -111817,8 +111817,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -113821,8 +113821,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -114610,8 +114610,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -115612,8 +115612,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -116614,8 +116614,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -120138,8 +120138,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -123545,8 +123545,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -125407,8 +125407,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -128025,8 +128025,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -130856,8 +130856,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -132608,8 +132608,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -133453,8 +133453,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -133731,8 +133731,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -134759,8 +134759,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -141366,8 +141366,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -144968,8 +144968,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -145634,8 +145634,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -147638,8 +147638,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -147832,8 +147832,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -148957,8 +148957,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -149345,8 +149345,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -149623,8 +149623,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -150095,8 +150095,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -152188,8 +152188,8 @@ MonoBehaviour:
   DirectionalNoiseStrengthMin: {x: 0.25, y: 0.25, z: 0.25}
   DirectionalNoiseStrengthMax: {x: 0.25, y: 0.25, z: 0.25}
   RandomnessSeed: {x: -0.3803019, y: 0.514819, z: -0.14494659}
-  RandomizeSeedOnShake: 0
-  UseAttenuation: 0
+  RandomizeSeedOnShake: 1
+  UseAttenuation: 1
   AttenuationCurve:
     serializedVersion: 2
     m_Curve:
