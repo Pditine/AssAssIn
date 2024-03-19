@@ -33,7 +33,6 @@ namespace LJH.Scripts.Player
 
         private void HandleVibration()
         {
-            PFCLog.Info(thePlayer.ID+":震动");
             Gamepad theGamepad = null;
             if(thePlayer.TheInput)
                 theGamepad = thePlayer.TheInput.devices[0] as Gamepad;

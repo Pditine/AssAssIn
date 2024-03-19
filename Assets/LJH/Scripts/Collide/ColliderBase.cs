@@ -28,6 +28,7 @@ namespace LJH.Scripts.Collide
             if (_collidingColliders.Contains(otherCollider)) return;
             AddCollider(otherCollider);
             otherCollider.AddCollider(this);
+            
             //_lastCollider = otherCollider;
             // if (otherCollider._currentCollideCD > 0) return;
             // //if (!otherCollider._canCollide) return;

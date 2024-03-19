@@ -11,6 +11,8 @@ namespace LJH.Scripts.Map
         [SerializeField] private float rotateSpeed;
         [HideInInspector]public Vector2 Direction;
         public MMF_Player collideWithBoundary;
+        [SerializeField] private BarrierThorn _thorn;
+        [SerializeField] private BarrierThorn Thorn;
 
         private void Start()
         {

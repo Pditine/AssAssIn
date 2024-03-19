@@ -10,8 +10,8 @@ namespace LJH.Scripts.Collide
 {
     public static class CollideHandler
     {
-        //public static void ColliderHandle(string tag1, string tag2, ColliderBase collider1, ColliderBase collider2,bool canExchange=true)
-        public static void ColliderHandle(string tag1, string tag2, ColliderBase collider1, ColliderBase collider2)
+        public static void ColliderHandle(string tag1, string tag2, ColliderBase collider1, ColliderBase collider2,bool canExchange=true)
+        //public static void ColliderHandle(string tag1, string tag2, ColliderBase collider1, ColliderBase collider2)
         {
             //HapticPatterns.PlayEmphasis();
             PFCLog.Info($"碰撞处理:{tag1},{tag2}");
@@ -49,6 +49,7 @@ namespace LJH.Scripts.Collide
                 (thePlayer1.CurrentSpeed, thePlayer2.CurrentSpeed) = (thePlayer2.CurrentSpeed, thePlayer1.CurrentSpeed);
                 thePlayer1.HitFeedback();
                 thePlayer2.HitFeedback();
+                return;
             }
 
             if (tag1 == "Thorn" && tag2 == "Ass")
@@ -112,8 +113,8 @@ namespace LJH.Scripts.Collide
                 collider1.transform.GetComponent<VisualBox>()?.Act();
                 theBarrier.collideWithBoundary.PlayFeedbacks();
             }
-            // if(canExchange)
-            //     ColliderHandle(tag2,tag1,collider2,collider1,false);
+            if(canExchange)
+                ColliderHandle(tag2,tag1,collider2,collider1,false);
         }
 
 
