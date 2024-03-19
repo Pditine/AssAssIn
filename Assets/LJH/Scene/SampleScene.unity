@@ -1905,6 +1905,10 @@ PrefabInstance:
       propertyPath: friction
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4959812823709938260, guid: 04c351a374a9f2d4282dc64733a5796b, type: 3}
+      propertyPath: collideWithBoundary
+      value: 
+      objectReference: {fileID: 371639134}
     - target: {fileID: 7377589778514604332, guid: 04c351a374a9f2d4282dc64733a5796b, type: 3}
       propertyPath: m_Name
       value: Barrier (1)
@@ -22094,8 +22098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackCurtain: {fileID: 933548199}
-  camera: {fileID: 0}
-  playerDeadInfo: {fileID: 0}
+  camera: {fileID: 818990735}
+  playerDeadInfo: {fileID: 2003597672}
 --- !u!4 &334993379
 Transform:
   m_ObjectHideFlags: 0
@@ -69269,7 +69273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &933548198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -153879,6 +153883,10 @@ PrefabInstance:
       propertyPath: friction
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4959812823709938260, guid: 04c351a374a9f2d4282dc64733a5796b, type: 3}
+      propertyPath: collideWithBoundary
+      value: 
+      objectReference: {fileID: 371639134}
     - target: {fileID: 7377589778514604332, guid: 04c351a374a9f2d4282dc64733a5796b, type: 3}
       propertyPath: m_Name
       value: Barrier

@@ -57,9 +57,6 @@ namespace LJH.Scripts.Player
             if (transform.localScale.x.Equals(CurrentScale)) return;
             transform.localScale = Vector3.Lerp(transform.localScale,new Vector3(CurrentScale,CurrentScale,CurrentScale),0.02f);
         }
-        
-        
-        
     }
     
 

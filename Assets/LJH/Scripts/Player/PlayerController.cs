@@ -144,6 +144,14 @@ namespace LJH.Scripts.Player
             //     Destroy(gameObject);
             // });
             // Hmxs: Replace with realtime timer; to enable more accurate timing control
+            PFCLog.Info("玩家死亡");
+            Timer.Register(
+                duration: 3.7f,
+                onComplete: () =>
+                {
+                    loseFeedback.PlayFeedbacks();
+                },
+                useRealTime: true);
             Timer.Register(
                 duration: 4f,
                 onComplete: () => Destroy(gameObject),

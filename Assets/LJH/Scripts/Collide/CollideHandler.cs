@@ -107,6 +107,7 @@ namespace LJH.Scripts.Collide
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 theBarrier.Direction = Out_Direction;
                 collider1.transform.GetComponent<VisualBox>()?.Act();
+                theBarrier.collideWithBoundary.PlayFeedbacks();
                 return;
             }
             
@@ -117,6 +118,7 @@ namespace LJH.Scripts.Collide
                 Vector2 Out_Direction = Vector2.Reflect(originDirection,((Boundary)collider1).NormalDirection);
                 theBarrier.Direction = Out_Direction;
                 collider1.transform.GetComponent<VisualBox>()?.Act();
+                theBarrier.collideWithBoundary.PlayFeedbacks();
                 return;
             }
             

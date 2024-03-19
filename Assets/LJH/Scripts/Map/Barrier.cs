@@ -1,4 +1,5 @@
 ﻿using System;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 namespace LJH.Scripts.Map
@@ -9,6 +10,7 @@ namespace LJH.Scripts.Map
         [SerializeField] private float friction;
         [SerializeField] private float rotateSpeed;
         [HideInInspector]public Vector2 Direction;
+        public MMF_Player collideWithBoundary;
 
         private void Start()
         {

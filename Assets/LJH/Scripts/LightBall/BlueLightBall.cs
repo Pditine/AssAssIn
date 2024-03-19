@@ -7,7 +7,7 @@ namespace LJH.LightBall
     {
         protected override void AddBuff(PlayerController thePlayer)
         {
-            thePlayer.TheAss.ChangeScale(-0.1f);
+            thePlayer.TheAss.ChangeScale(-0.2f);
         }
     }
 }

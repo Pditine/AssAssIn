@@ -1,4 +1,5 @@
 ﻿using LJH.Scripts.Collide;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 namespace LJH.Scripts.Map
@@ -7,5 +8,6 @@ namespace LJH.Scripts.Map
     {
         [SerializeField] private Barrier theBarrier;
         public Barrier TheBarrier=>theBarrier;
+
     }
 }
