@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Hmxs.Toolkit.Base.Singleton;
 using LJH.Scripts.Player;
+using MoreMountains.Feedbacks;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -21,6 +22,9 @@ namespace Hmxs.Scripts
 
         private PlayerInputManager _playerInputManager;
 
+        [Title("Audios")]
+        [SerializeField] private MMF_Player confirmAudio;
+
         private void Start()
         {
             uiLeft.SetActive(true);
@@ -34,6 +38,7 @@ namespace Hmxs.Scripts
         {
             if (activePlayers[0] == -1)
             {
+                confirmAudio.PlayFeedbacks();
                 playerInput.GetComponent<PlayerAction>().BindPlayer(playerLeft);
                 activePlayers[0] = playerInput.playerIndex;
                 uiLeft.SetActive(false);
@@ -42,6 +47,7 @@ namespace Hmxs.Scripts
             }
             else if (activePlayers[1] == -1)
             {
+                confirmAudio.PlayFeedbacks();
                 playerInput.GetComponent<PlayerAction>().BindPlayer(playerRight);
                 activePlayers[1] = playerInput.playerIndex;
                 uiRight.SetActive(false);

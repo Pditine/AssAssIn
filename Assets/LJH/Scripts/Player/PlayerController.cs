@@ -47,6 +47,12 @@ namespace LJH.Scripts.Player
         [SerializeField] private MMF_Player loseFeedback;
         private MMScaleShaker _scaleShaker;
 
+        [Title("Audios")]
+        [SerializeField] private MMF_Player pushAudio;
+        [SerializeField] private MMF_Player slowdownAudio;
+        [SerializeField] private MMF_Player selectAudio;
+        [SerializeField] private MMF_Player confirmAudio;
+
         private void Start()
         {
             _scaleShaker = GetComponent<MMScaleShaker>();
@@ -102,12 +108,17 @@ namespace LJH.Scripts.Player
                 CurrentSpeed = maxSpeed;
                 _currentCD = cd;
                 directionArrow.SetActive(false);
+
+                pushAudio.PlayFeedbacks();
+
                 Debug.Log("结束蓄力");
             }
         }
 
         private void ReduceSpeed()
         {
+            //slowdownAudio.PlayFeedbacks();
+
             CurrentSpeed -= friction*Time.deltaTime;
             if (CurrentSpeed <= 0) CurrentSpeed = 0;
         }
@@ -182,5 +193,7 @@ namespace LJH.Scripts.Player
 
         public void HitFeedback() => hitFeedback.PlayFeedbacks();
         public void LoseFeedback() => loseFeedback.PlayFeedbacks();
+        public void SelectAudio() => selectAudio.PlayFeedbacks();
+        public void ConfirmAudio() => confirmAudio.PlayFeedbacks();
     }
 }

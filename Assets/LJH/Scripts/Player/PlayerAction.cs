@@ -55,7 +55,9 @@ namespace LJH.Scripts.Player
                 if (input == Vector2.zero) canSelect = true;
                 return;
             }
-            
+
+            _thePlayer.SelectAudio();
+
             SetPlayerHighLight(false);
             
             var angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
@@ -96,6 +98,8 @@ namespace LJH.Scripts.Player
 
         public void Confirm(InputAction.CallbackContext ctx)
         {
+            _thePlayer.ConfirmAudio();
+
             _ready = !_ready;
             SetPlayerHighLight(!_ready);
             Debug.Log(!_ready);

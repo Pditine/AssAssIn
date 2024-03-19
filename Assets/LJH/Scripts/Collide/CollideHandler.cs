@@ -96,6 +96,7 @@ namespace LJH.Scripts.Collide
                 thePlayer.Direction = -thePlayer.Direction;
                 theBarrier.CurrentSpeed = thePlayer.CurrentSpeed/1.5f;
                 thePlayer.CurrentSpeed /= 1.2f;
+                thePlayer.HitFeedback();
                 return;
             }
             
