@@ -8,6 +8,6 @@ namespace LJH.Scripts.Map
     {
         [SerializeField] private Barrier theBarrier;
         public Barrier TheBarrier=>theBarrier;
-
+    
     }
 }

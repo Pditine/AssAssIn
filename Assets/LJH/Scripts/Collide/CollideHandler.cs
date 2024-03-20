@@ -51,6 +51,44 @@ namespace LJH.Scripts.Collide
                 thePlayer2.HitFeedback();
                 return;
             }
+            
+            if (tag1 == "BarrierThorn" && tag2 == "BarrierThorn")
+            {
+                var theBarrier1 = (collider1 as BarrierThorn).TheBarrier;
+                var theBarrier2 = (collider2 as BarrierThorn).TheBarrier;
+                
+                (collider1 as BarrierThorn).TheBarrier.ThePedestal.AddCollider(collider2);
+                collider2.AddCollider((collider1 as BarrierThorn).TheBarrier.ThePedestal);
+                (collider2 as BarrierThorn).TheBarrier.ThePedestal.AddCollider(collider1);
+                collider1.AddCollider((collider2 as BarrierThorn).TheBarrier.ThePedestal);
+                
+                (theBarrier1.Direction, theBarrier2.Direction) = (theBarrier2.Direction, theBarrier1.Direction);
+                (theBarrier1.CurrentSpeed, theBarrier2.CurrentSpeed) = (theBarrier2.CurrentSpeed, theBarrier1.CurrentSpeed);
+                theBarrier1.HitFeedback.PlayFeedbacks();
+                theBarrier2.HitFeedback.PlayFeedbacks();
+                return;
+            }
+            
+            if (tag1 == "BarrierThorn" && tag2 == "BarrierPedestal")
+            {
+                var theBarrier1 = (collider1 as BarrierThorn).TheBarrier;
+                var theBarrier2 = (collider2 as BarrierPedestal).TheBarrier;
+                
+                // (collider1 as BarrierThorn).TheBarrier.ThePedestal.AddCollider(collider2);
+                // collider2.AddCollider((collider1 as BarrierThorn).TheBarrier.ThePedestal);
+                //
+                // PFCLog.Info((collider2 as BarrierPedestal).TheBarrier.TheThorn);
+                // PFCLog.Info(collider1);
+                // (collider2 as BarrierPedestal).TheBarrier.TheThorn.AddCollider((collider1));
+                //
+                // collider1.AddCollider((collider2 as BarrierThorn).TheBarrier.TheThorn);
+                
+                (theBarrier1.Direction, theBarrier2.Direction) = (theBarrier2.Direction, theBarrier1.Direction);
+                (theBarrier1.CurrentSpeed, theBarrier2.CurrentSpeed) = (theBarrier2.CurrentSpeed, theBarrier1.CurrentSpeed);
+                theBarrier1.HitFeedback.PlayFeedbacks();
+                theBarrier2.HitFeedback.PlayFeedbacks();
+                return;
+            }
 
             if (tag1 == "Thorn" && tag2 == "Ass")
             {
@@ -76,6 +114,10 @@ namespace LJH.Scripts.Collide
             {
                 var thePlayer = (collider2 as Thorn).ThePlayer;
                 var theBarrier = (collider1 as BarrierThorn).TheBarrier;
+                
+                (collider1 as BarrierThorn).TheBarrier.ThePedestal.AddCollider(collider2);
+                collider2.AddCollider((collider1 as BarrierThorn).TheBarrier.ThePedestal);
+                
                 theBarrier.Direction = thePlayer.Direction;
                 thePlayer.Direction = -thePlayer.Direction;
                 theBarrier.CurrentSpeed = thePlayer.CurrentSpeed/1.5f;
@@ -87,6 +129,10 @@ namespace LJH.Scripts.Collide
             {
                 var thePlayer = (collider2 as Thorn).ThePlayer;
                 var theBarrier = (collider1 as BarrierPedestal).TheBarrier; 
+                
+                (collider1 as BarrierPedestal).TheBarrier.TheThorn.AddCollider(collider2);
+                collider2.AddCollider((collider1 as BarrierPedestal).TheBarrier.TheThorn);
+                
                 theBarrier.Direction = thePlayer.Direction;
                 thePlayer.Direction = -thePlayer.Direction;
                 theBarrier.CurrentSpeed = thePlayer.CurrentSpeed/1.5f;

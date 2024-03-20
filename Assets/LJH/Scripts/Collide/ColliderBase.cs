@@ -59,14 +59,16 @@ namespace LJH.Scripts.Collide
         //     if (_currentCollideCD <= 0) _currentCollideCD = 0;
         // }
         
-        private void AddCollider(ColliderBase theCollider)
+        public void AddCollider(ColliderBase theCollider)
         {
+            PFCLog.Info("add Collider"+gameObject.name);
             _collidingColliders.Add(theCollider);
             DelayUtility.Delay(0.1f, () =>
             {
                 if (_collidingColliders.Contains(theCollider))
                     _collidingColliders.Remove(theCollider);
             });
+            PFCLog.Info("add Collider 00 "+gameObject.name); 
         }
     }
 }
